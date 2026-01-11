@@ -423,6 +423,238 @@ const translations = {
       "title": "Controlling Cookies",
       "content": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in the Cookie Consent Manager found in the website footer."
     }
+  },
+
+
+
+
+
+
+
+
+  "dashboard": {
+    "accessDenied": "You must be signed in to access the dashboard.",
+    "signOutFailed": "Failed to sign out. Please try again.",
+    "active": "Active",
+    "welcomeBack": "Welcome back"
+  },
+  "dash_nav": {
+    "overview": "Overview",
+    "shipments": "Shipments",
+    "newShipment": "New Shipment",
+    "track": "Track",
+    "orders": "Orders",
+    "messages": "Messages",
+    "activity": "Activity",
+    "report": "Report",
+    "support": "Support",
+    "account": "Account",
+    "billing": "Billing",
+    "documents": "Documents",
+    "settings": "Settings",
+    "homePage": "Home Page",
+    "createShipment": "Create Shipment",
+    "signout": "Sign Out",
+    "myAccount": "My Account"
+  },
+  "common": {
+    "user": "User",
+    "logoAlt": "SwiftParcel logo",
+    "toggleNavigation": "Toggle navigation"
+  },
+
+  "dashboardOverview": {
+    "loading": "Loading your logistics dashboard...",
+    "errors": {
+      "fetchFailed": "Failed to load dashboard data. Please try again."
+    },
+    "empty": {
+      "title": "Your Global Logistics Hub",
+      "subtitle": "Manage shipments, track deliveries, and scale your business — all in one place."
+    },
+    "actions": {
+      "newShipmentDesc": "Create and schedule a new delivery",
+      "trackDesc": "Monitor real-time delivery status",
+      "billingDesc": "View invoices and payment history",
+      "documentsDesc": "Access shipping labels & customs forms"
+    },
+    "stats": {
+      "total": "Total Shipments",
+      "pending": "Pending",
+      "inTransit": "In Transit",
+      "delivered": "Delivered",
+      "canceled": "Canceled",
+      "successRate": "Success Rate"
+    },
+    "createFirstShipment": "Create Your First Shipment",
+    "recentShipments": "Recent Shipments",
+    "shipmentsPlaceholder": "Shipment list component will render here.",
+    "liveTracking": "Live Tracking",
+    "trackingComingSoon": "Real-time GPS updates coming soon.",
+    "packageInsights": "Package Insights",
+    "insightsDescription": "Weight, dimensions, and customs data.",
+    "globalNetwork": "Global Delivery Network",
+    "mapDescription": "Live route visualization powered by SwiftParcel Intelligence™"
+  },
+  "common": {
+    "viewAll": "View All"
+  },
+
+  "shipments": {
+    "title": "Shipments",
+    "subtitle": "Manage and track all your deliveries in one place",
+    "loading": "Loading shipments...",
+    "errors": {
+      "fetchFailed": "Failed to load shipments. Please try again."
+    },
+    "stats": {
+      "total": "Total Shipments",
+      "pending": "Pending",
+      "inTransit": "In Transit",
+      "delivered": "Delivered",
+      "canceled": "Canceled"
+    },
+    "search": {
+      "placeholder": "Search by tracking ID, destination..."
+    },
+    "filter": {
+      "status": "Status",
+      "allStatuses": "All Statuses"
+    },
+    "status": {
+      "pending": "Pending",
+      "inTransit": "In Transit",
+      "delivered": "Delivered",
+      "canceled": "Canceled"
+    },
+    "actions": {
+      "exportCSV": "Export CSV",
+      "printLabels": "Print Labels",
+      "track": "Track",
+      "details": "Details"
+    },
+    "table": {
+      "id": "Shipment ID",
+      "tracking": "Tracking",
+      "route": "Route",
+      "service": "Service",
+      "weight": "Weight",
+      "date": "Date",
+      "estDelivery": "Est. Delivery",
+      "actions": "Actions"
+    },
+    "csv": {
+      "id": "ID",
+      "tracking": "Tracking",
+      "from": "From",
+      "to": "To",
+      "service": "Service",
+      "weight": "Weight (kg)",
+      "date": "Date",
+      "estDelivery": "Est. Delivery",
+      "status": "Status"
+    },
+    "print": {
+      "title": "SwiftParcel Labels",
+      "tracking": "Tracking",
+      "to": "To"
+    },
+    "noData": "No shipments found. Try adjusting your filters."
+  },
+
+  "newShipment": {
+    "title": "Submit Shipment Request",
+    "subtitle": "We’ll review your details and send a confirmed quote within 2 business hours.",
+    "sections": {
+      "pickupMethod": "1. Collection Method",
+      "addresses": "2. Addresses",
+      "packageInfo": "3. Package Information",
+      "transportSchedule": "4. Transport & Schedule"
+    },
+    "pickup": {
+      "dropoffTitle": "Drop-off at Hub",
+      "dropoffDesc": "Bring your package to one of our local hubs",
+      "pickupTitle": "Schedule Pickup",
+      "pickupDesc": "We’ll collect from your location"
+    },
+    "addresses": {
+      "sender": "Sender (Pickup)",
+      "recipient": "Recipient (Delivery)",
+      "businessLocation": "Business Location"
+    },
+    "placeholders": {
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "email": "Email",
+      "streetAddress": "Street Address",
+      "city": "City",
+      "zip": "ZIP/Postal",
+      "packageDescription": "Describe the contents (e.g., electronics, clothing, machinery)",
+      "declaredValue": "Declared Value (for insurance)",
+      "customsContents": "List all items, quantities, and values...",
+      "specialInstructions": "Special instructions or requirements...",
+      "additionalNotes": "Additional notes"
+    },
+    "labels": {
+      "preferredPickupDate": "Preferred Pickup Date",
+      "preferredDeliveryDate": "Preferred Delivery Date",
+      "shipmentType": "Shipment Type",
+      "contactPreference": "Contact Preference"
+    },
+    "package": {
+      "categoryLabel": "Category",
+      "categories": {
+        "general": "General Goods",
+        "fragile": "Fragile",
+        "perishable": "Perishable",
+        "hazardous": "Hazardous (requires approval)",
+        "documents": "Documents"
+      },
+      "hazardousWarning": "Hazardous materials require special handling and documentation. Our team will contact you.",
+      "customsClearance": "This shipment requires customs clearance"
+    },
+    "transport": {
+      "air": "Air Transport",
+      "ground": "Ground Transport"
+    },
+    "shipmentTypes": {
+      "standard": "Standard",
+      "express": "Express (24–72h)",
+      "urgent": "Urgent (Same/Next Day)"
+    },
+    "contactPreferences": {
+      "email": "Email",
+      "sms": "SMS",
+      "phone": "Phone Call"
+    },
+    "errors": {
+      "senderName": "Sender name is required",
+      "senderPhone": "Sender phone is required",
+      "senderEmail": "Valid sender email is required",
+      "senderAddress": "Sender address is required",
+      "senderCity": "Sender city is required",
+      "recipientName": "Recipient name is required",
+      "recipientPhone": "Recipient phone is required",
+      "recipientEmail": "Valid recipient email is required",
+      "recipientAddress": "Recipient address is required",
+      "recipientCity": "Recipient city is required",
+      "packageDescription": "Package description is required",
+      "weight": "Weight must be at least 0.1 kg",
+      "length": "Length must be at least 1 cm",
+      "width": "Width must be at least 1 cm",
+      "height": "Height must be at least 1 cm",
+      "customsContents": "Customs contents declaration is required",
+      "submitFailed": "Failed to submit request. Please try again."
+    },
+    "success": {
+      "message": "Request submitted successfully! Your shipment ID is: {{id}}"
+    },
+    "submitting": "Submitting Request...",
+    "submitButton": "Submit Shipment Request",
+    "help": {
+      "reviewTime": "After submission, our logistics team will review your request and send a confirmed quote within 2 business hours.",
+      "urgentHelp": "📞 Need urgent help? Call us at +1 (800) SWIFT-123"
+    }
   }
 
   },
@@ -790,6 +1022,226 @@ ar: {
     "controllingCookies": {
       "title": "التحكم في ملفات تعريف الارتباط",
       "content": "لديك الحق في تحديد ما إذا كنت ستقبل ملفات تعريف الارتباط أو ترفضها. يمكنك ممارسة حقوقك المتعلقة بملفات تعريف الارتباط من خلال تعيين تفضيلاتك في مدير موافقة ملفات تعريف الارتباط الموجود في تذييل الموقع."
+    }
+  },
+
+  "dashboard": {
+    "accessDenied": "يجب أن تكون مسجّل الدخول للوصول إلى لوحة التحكم.",
+    "signOutFailed": "فشل تسجيل الخروج. يرجى المحاولة مرة أخرى.",
+    "active": "نشط",
+    "welcomeBack": "مرحبًا بك مجددًا"
+  },
+  "dash_nav": {
+    "overview": "نظرة عامة",
+    "shipments": "الشحنات",
+    "newShipment": "شحنة جديدة",
+    "track": "تتبع",
+    "orders": "الطلبات",
+    "messages": "الرسائل",
+    "activity": "النشاط",
+    "report": "التقارير",
+    "support": "الدعم",
+    "account": "الحساب",
+    "billing": "الفوترة",
+    "documents": "المستندات",
+    "settings": "الإعدادات",
+    "homePage": "الصفحة الرئيسية",
+    "createShipment": "إنشاء شحنة",
+    "signout": "تسجيل الخروج",
+    "myAccount": "حسابي"
+  },
+  "common": {
+    "user": "مستخدم",
+    "logoAlt": "شعار SwiftParcel",
+    "toggleNavigation": "تبديل التنقل",
+    "viewAll": "عرض الكل"
+  },
+  "dashboardOverview": {
+    "loading": "جارٍ تحميل لوحة تحكم الشحن الخاصة بك...",
+    "errors": {
+      "fetchFailed": "فشل تحميل بيانات لوحة التحكم. يرجى المحاولة مرة أخرى."
+    },
+    "empty": {
+      "title": "مركزك العالمي للخدمات اللوجستية",
+      "subtitle": "أدر شحناتك، وتتبّع عمليات التسليم، ووسّع نطاق عملك — كل ذلك في مكان واحد."
+    },
+    "actions": {
+      "newShipmentDesc": "أنشئ وجدولة عملية تسليم جديدة",
+      "trackDesc": "راقب حالة التسليم في الوقت الفعلي",
+      "billingDesc": "اعرض الفواتير وسجل المدفوعات",
+      "documentsDesc": "وصِّل إلى ملصقات الشحن واستمارات الجمارك"
+    },
+    "stats": {
+      "total": "إجمالي الشحنات",
+      "pending": "قيد الانتظار",
+      "inTransit": "قيد النقل",
+      "delivered": "تم التسليم",
+      "canceled": "ملغاة",
+      "successRate": "معدل النجاح"
+    },
+    "createFirstShipment": "أنشئ أول شحنة لك",
+    "recentShipments": "الشحنات الأخيرة",
+    "shipmentsPlaceholder": "سيتم عرض مكوّن قائمة الشحنات هنا.",
+    "liveTracking": "التتبع المباشر",
+    "trackingComingSoon": "تحديثات GPS في الوقت الفعلي قادمة قريبًا.",
+    "packageInsights": "تحليلات الطرد",
+    "insightsDescription": "الوزن، الأبعاد، وبيانات الجمارك.",
+    "globalNetwork": "شبكة التوصيل العالمية",
+    "mapDescription": "تصور المسارات المباشرة مدعوم بتقنية SwiftParcel Intelligence™"
+  },
+  "shipments": {
+    "title": "الشحنات",
+    "subtitle": "أدر وتابع جميع عمليات التسليم الخاصة بك في مكان واحد",
+    "loading": "جارٍ تحميل الشحنات...",
+    "errors": {
+      "fetchFailed": "فشل تحميل الشحنات. يرجى المحاولة مرة أخرى."
+    },
+    "stats": {
+      "total": "إجمالي الشحنات",
+      "pending": "قيد الانتظار",
+      "inTransit": "قيد النقل",
+      "delivered": "تم التسليم",
+      "canceled": "ملغاة"
+    },
+    "search": {
+      "placeholder": "ابحث حسب رقم التتبع أو الوجهة..."
+    },
+    "filter": {
+      "status": "الحالة",
+      "allStatuses": "جميع الحالات"
+    },
+    "status": {
+      "pending": "قيد الانتظار",
+      "inTransit": "قيد النقل",
+      "delivered": "تم التسليم",
+      "canceled": "ملغاة"
+    },
+    "actions": {
+      "exportCSV": "تصدير CSV",
+      "printLabels": "طباعة الملصقات",
+      "track": "تتبع",
+      "details": "التفاصيل"
+    },
+    "table": {
+      "id": "معرف الشحنة",
+      "tracking": "التتبع",
+      "route": "المسار",
+      "service": "الخدمة",
+      "weight": "الوزن",
+      "date": "التاريخ",
+      "estDelivery": "التاريخ المقدّر للتسليم",
+      "actions": "إجراءات"
+    },
+    "csv": {
+      "id": "المعرف",
+      "tracking": "التتبع",
+      "from": "من",
+      "to": "إلى",
+      "service": "الخدمة",
+      "weight": "الوزن (كغ)",
+      "date": "التاريخ",
+      "estDelivery": "التاريخ المقدّر للتسليم",
+      "status": "الحالة"
+    },
+    "print": {
+      "title": "ملصقات SwiftParcel",
+      "tracking": "التتبع",
+      "to": "إلى"
+    },
+    "noData": "لم يتم العثور على شحنات. جرّب تعديل الفلاتر الخاصة بك."
+  },
+  "newShipment": {
+    "title": "إرسال طلب شحنة",
+    "subtitle": "سنراجع تفاصيلك ونرسل عرض سعر مؤكّد خلال ساعتين عمل.",
+    "sections": {
+      "pickupMethod": "1. طريقة الاستلام",
+      "addresses": "2. العناوين",
+      "packageInfo": "3. معلومات الطرد",
+      "transportSchedule": "4. النقل والجدولة"
+    },
+    "pickup": {
+      "dropoffTitle": "التسليم في المركز",
+      "dropoffDesc": "أحضر طردك إلى أحد مراكزنا المحلية",
+      "pickupTitle": "جدولة الاستلام",
+      "pickupDesc": "سنقوم بالاستلام من موقعك"
+    },
+    "addresses": {
+      "sender": "المرسِل (الاستلام)",
+      "recipient": "المستلم (التسليم)",
+      "businessLocation": "موقع العمل"
+    },
+    "placeholders": {
+      "fullName": "الاسم الكامل",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "streetAddress": "عنوان الشارع",
+      "city": "المدينة",
+      "zip": "الرمز البريدي",
+      "packageDescription": "صف المحتويات (مثل: إلكترونيات، ملابس، آلات)",
+      "declaredValue": "القيمة المصرّح بها (للتأمين)",
+      "customsContents": "اذكر جميع العناصر، الكميات، والقيم...",
+      "specialInstructions": "تعليمات أو متطلبات خاصة...",
+      "additionalNotes": "ملاحظات إضافية"
+    },
+    "labels": {
+      "preferredPickupDate": "تاريخ الاستلام المفضّل",
+      "preferredDeliveryDate": "تاريخ التسليم المفضّل",
+      "shipmentType": "نوع الشحنة",
+      "contactPreference": "تفضيل التواصل"
+    },
+    "package": {
+      "categoryLabel": "الفئة",
+      "categories": {
+        "general": "بضائع عامة",
+        "fragile": "قابل للكسر",
+        "perishable": "قابل للتلف",
+        "hazardous": "خطر (يتطلب موافقة)",
+        "documents": "مستندات"
+      },
+      "hazardousWarning": "تتطلب المواد الخطرة معالجة خاصة ووثائق رسمية. سيتواصل معك فريقنا.",
+      "customsClearance": "هذه الشحنة تتطلب تخليصًا جمركيًا"
+    },
+    "transport": {
+      "air": "النقل الجوي",
+      "ground": "النقل البري"
+    },
+    "shipmentTypes": {
+      "standard": "قياسي",
+      "express": "(express (24–72 ساعة",
+      "urgent": "عاجل (في نفس اليوم/اليوم التالي)"
+    },
+    "contactPreferences": {
+      "email": "البريد الإلكتروني",
+      "sms": "الرسائل النصية",
+      "phone": "مكالمة هاتفية"
+    },
+    "errors": {
+      "senderName": "اسم المرسِل مطلوب",
+      "senderPhone": "هاتف المرسِل مطلوب",
+      "senderEmail": "يجب إدخال بريد إلكتروني صحيح للمرسِل",
+      "senderAddress": "عنوان المرسِل مطلوب",
+      "senderCity": "مدينة المرسِل مطلوبة",
+      "recipientName": "اسم المستلم مطلوب",
+      "recipientPhone": "هاتف المستلم مطلوب",
+      "recipientEmail": "يجب إدخال بريد إلكتروني صحيح للمستلم",
+      "recipientAddress": "عنوان المستلم مطلوب",
+      "recipientCity": "مدينة المستلم مطلوبة",
+      "packageDescription": "وصف الطرد مطلوب",
+      "weight": "يجب أن يكون الوزن 0.1 كغ على الأقل",
+      "length": "يجب أن يكون الطول 1 سم على الأقل",
+      "width": "يجب أن يكون العرض 1 سم على الأقل",
+      "height": "يجب أن يكون الارتفاع 1 سم على الأقل",
+      "customsContents": "تصريح محتويات الجمارك مطلوب",
+      "submitFailed": "فشل إرسال الطلب. يرجى المحاولة مرة أخرى."
+    },
+    "success": {
+      "message": "تم إرسال الطلب بنجاح! معرف شحنتك هو: {{id}}"
+    },
+    "submitting": "جارٍ إرسال الطلب...",
+    "submitButton": "إرسال طلب الشحنة",
+    "help": {
+      "reviewTime": "بعد الإرسال، سيقوم فريق الخدمات اللوجستية لدينا بمراجعة طلبك وإرسال عرض سعر مؤكّد خلال ساعتين عمل.",
+      "urgentHelp": "📞 هل تحتاج مساعدة عاجلة؟ اتصل بنا على +1 (800) SWIFT-123"
     }
   }
 
@@ -1160,6 +1612,226 @@ de: {
       "title": "Cookie-Einstellungen",
       "content": "Sie haben das Recht zu entscheiden, ob Sie Cookies akzeptieren oder ablehnen möchten. Sie können Ihre Cookie-Einstellungen über den Cookie-Consent-Manager im Footer der Website vornehmen."
     }
+  },
+
+  "dashboard": {
+    "accessDenied": "Sie müssen angemeldet sein, um auf das Dashboard zuzugreifen.",
+    "signOutFailed": "Abmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "active": "Aktiv",
+    "welcomeBack": "Willkommen zurück"
+  },
+  "dash_nav": {
+    "overview": "Übersicht",
+    "shipments": "Sendungen",
+    "newShipment": "Neue Sendung",
+    "track": "Verfolgen",
+    "orders": "Bestellungen",
+    "messages": "Nachrichten",
+    "activity": "Aktivität",
+    "report": "Bericht",
+    "support": "Support",
+    "account": "Konto",
+    "billing": "Abrechnung",
+    "documents": "Dokumente",
+    "settings": "Einstellungen",
+    "homePage": "Startseite",
+    "createShipment": "Sendung erstellen",
+    "signout": "Abmelden",
+    "myAccount": "Mein Konto"
+  },
+  "common": {
+    "user": "Benutzer",
+    "logoAlt": "SwiftParcel-Logo",
+    "toggleNavigation": "Navigation umschalten",
+    "viewAll": "Alle anzeigen"
+  },
+  "dashboardOverview": {
+    "loading": "Ihr Logistik-Dashboard wird geladen …",
+    "errors": {
+      "fetchFailed": "Dashboard-Daten konnten nicht geladen werden. Bitte versuchen Sie es erneut."
+    },
+    "empty": {
+      "title": "Ihr globaler Logistik-Hub",
+      "subtitle": "Verwalten Sie Sendungen, verfolgen Sie Lieferungen und skalieren Sie Ihr Unternehmen – alles an einem Ort."
+    },
+    "actions": {
+      "newShipmentDesc": "Eine neue Lieferung erstellen und planen",
+      "trackDesc": "Echtzeit-Lieferstatus überwachen",
+      "billingDesc": "Rechnungen und Zahlungsverlauf anzeigen",
+      "documentsDesc": "Versandetiketten und Zolldokumente abrufen"
+    },
+    "stats": {
+      "total": "Gesamte Sendungen",
+      "pending": "Ausstehend",
+      "inTransit": "Unterwegs",
+      "delivered": "Geliefert",
+      "canceled": "Storniert",
+      "successRate": "Erfolgsquote"
+    },
+    "createFirstShipment": "Erstellen Sie Ihre erste Sendung",
+    "recentShipments": "Letzte Sendungen",
+    "shipmentsPlaceholder": "Die Sendungslistenkomponente wird hier angezeigt.",
+    "liveTracking": "Live-Verfolgung",
+    "trackingComingSoon": "Echtzeit-GPS-Updates bald verfügbar.",
+    "packageInsights": "Paket-Insights",
+    "insightsDescription": "Gewicht, Abmessungen und Zolldaten.",
+    "globalNetwork": "Globales Liefernetzwerk",
+    "mapDescription": "Live-Routenvisualisierung powered by SwiftParcel Intelligence™"
+  },
+  "shipments": {
+    "title": "Sendungen",
+    "subtitle": "Verwalten und verfolgen Sie alle Ihre Lieferungen an einem Ort",
+    "loading": "Sendungen werden geladen …",
+    "errors": {
+      "fetchFailed": "Sendungen konnten nicht geladen werden. Bitte versuchen Sie es erneut."
+    },
+    "stats": {
+      "total": "Gesamte Sendungen",
+      "pending": "Ausstehend",
+      "inTransit": "Unterwegs",
+      "delivered": "Geliefert",
+      "canceled": "Storniert"
+    },
+    "search": {
+      "placeholder": "Suche nach Tracking-ID, Zielort …"
+    },
+    "filter": {
+      "status": "Status",
+      "allStatuses": "Alle Status"
+    },
+    "status": {
+      "pending": "Ausstehend",
+      "inTransit": "Unterwegs",
+      "delivered": "Geliefert",
+      "canceled": "Storniert"
+    },
+    "actions": {
+      "exportCSV": "Als CSV exportieren",
+      "printLabels": "Etiketten drucken",
+      "track": "Verfolgen",
+      "details": "Details"
+    },
+    "table": {
+      "id": "Sendungs-ID",
+      "tracking": "Tracking",
+      "route": "Route",
+      "service": "Service",
+      "weight": "Gewicht",
+      "date": "Datum",
+      "estDelivery": "Vorauss. Zustellung",
+      "actions": "Aktionen"
+    },
+    "csv": {
+      "id": "ID",
+      "tracking": "Tracking",
+      "from": "Von",
+      "to": "Nach",
+      "service": "Service",
+      "weight": "Gewicht (kg)",
+      "date": "Datum",
+      "estDelivery": "Vorauss. Zustellung",
+      "status": "Status"
+    },
+    "print": {
+      "title": "SwiftParcel-Etiketten",
+      "tracking": "Tracking",
+      "to": "An"
+    },
+    "noData": "Keine Sendungen gefunden. Passen Sie Ihre Filter an."
+  },
+  "newShipment": {
+    "title": "Sendungsanfrage absenden",
+    "subtitle": "Wir prüfen Ihre Angaben und senden Ihnen innerhalb von 2 Werkstunden ein bestätigtes Angebot.",
+    "sections": {
+      "pickupMethod": "1. Abholmethode",
+      "addresses": "2. Adressen",
+      "packageInfo": "3. Paketinformationen",
+      "transportSchedule": "4. Transport & Zeitplan"
+    },
+    "pickup": {
+      "dropoffTitle": "Abgabe im Hub",
+      "dropoffDesc": "Bringen Sie Ihr Paket zu einem unserer lokalen Hubs",
+      "pickupTitle": "Abholung planen",
+      "pickupDesc": "Wir holen es von Ihrem Standort ab"
+    },
+    "addresses": {
+      "sender": "Absender (Abholung)",
+      "recipient": "Empfänger (Lieferung)",
+      "businessLocation": "Geschäftsstandort"
+    },
+    "placeholders": {
+      "fullName": "Vollständiger Name",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "streetAddress": "Straße und Hausnummer",
+      "city": "Stadt",
+      "zip": "PLZ",
+      "packageDescription": "Beschreiben Sie den Inhalt (z. B. Elektronik, Kleidung, Maschinen)",
+      "declaredValue": "Erklärter Wert (für Versicherung)",
+      "customsContents": "Liste aller Artikel, Mengen und Werte …",
+      "specialInstructions": "Besondere Anweisungen oder Anforderungen …",
+      "additionalNotes": "Zusätzliche Hinweise"
+    },
+    "labels": {
+      "preferredPickupDate": "Bevorzugtes Abholdatum",
+      "preferredDeliveryDate": "Bevorzugtes Lieferdatum",
+      "shipmentType": "Sendungsart",
+      "contactPreference": "Kontaktpräferenz"
+    },
+    "package": {
+      "categoryLabel": "Kategorie",
+      "categories": {
+        "general": "Allgemeine Güter",
+        "fragile": "Zerbrechlich",
+        "perishable": "Verderblich",
+        "hazardous": "Gefährlich (Genehmigung erforderlich)",
+        "documents": "Dokumente"
+      },
+      "hazardousWarning": "Gefahrgut erfordert besondere Handhabung und Dokumentation. Unser Team wird Sie kontaktieren.",
+      "customsClearance": "Diese Sendung erfordert eine Zollabfertigung"
+    },
+    "transport": {
+      "air": "Lufttransport",
+      "ground": "Straßentransport"
+    },
+    "shipmentTypes": {
+      "standard": "Standard",
+      "express": "Express (24–72 Std.)",
+      "urgent": "Dringend (am selben/nexten Tag)"
+    },
+    "contactPreferences": {
+      "email": "E-Mail",
+      "sms": "SMS",
+      "phone": "Telefonanruf"
+    },
+    "errors": {
+      "senderName": "Absendername ist erforderlich",
+      "senderPhone": "Absendertelefon ist erforderlich",
+      "senderEmail": "Eine gültige Absender-E-Mail ist erforderlich",
+      "senderAddress": "Absenderadresse ist erforderlich",
+      "senderCity": "Absenderstadt ist erforderlich",
+      "recipientName": "Empfängername ist erforderlich",
+      "recipientPhone": "Empfängertelefon ist erforderlich",
+      "recipientEmail": "Eine gültige Empfänger-E-Mail ist erforderlich",
+      "recipientAddress": "Empfängeradresse ist erforderlich",
+      "recipientCity": "Empfängerstadt ist erforderlich",
+      "packageDescription": "Paketbeschreibung ist erforderlich",
+      "weight": "Gewicht muss mindestens 0,1 kg betragen",
+      "length": "Länge muss mindestens 1 cm betragen",
+      "width": "Breite muss mindestens 1 cm betragen",
+      "height": "Höhe muss mindestens 1 cm betragen",
+      "customsContents": "Zollinhaltserklärung ist erforderlich",
+      "submitFailed": "Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    },
+    "success": {
+      "message": "Anfrage erfolgreich gesendet! Ihre Sendungs-ID lautet: {{id}}"
+    },
+    "submitting": "Anfrage wird gesendet …",
+    "submitButton": "Sendungsanfrage absenden",
+    "help": {
+      "reviewTime": "Nach der Übermittlung prüft unser Logistikteam Ihre Anfrage und sendet Ihnen innerhalb von 2 Werkstunden ein bestätigtes Angebot.",
+      "urgentHelp": "📞 Dringende Hilfe benötigt? Rufen Sie uns an unter +1 (800) SWIFT-123"
+    }
   }
 },
 es: {
@@ -1526,6 +2198,226 @@ es: {
     "controllingCookies": {
       "title": "Gestión de cookies",
       "content": "Tienes derecho a decidir si aceptas o rechazas las cookies. Puedes ejercer este derecho configurando tus preferencias en el Gestor de Consentimiento de Cookies ubicado en el pie de página del sitio web."
+    }
+  },
+
+  "dashboard": {
+    "accessDenied": "Debes iniciar sesión para acceder al panel de control.",
+    "signOutFailed": "Error al cerrar sesión. Por favor, inténtalo de nuevo.",
+    "active": "Activo",
+    "welcomeBack": "Bienvenido de nuevo"
+  },
+  "dash_nav": {
+    "overview": "Resumen",
+    "shipments": "Envíos",
+    "newShipment": "Nuevo envío",
+    "track": "Rastrear",
+    "orders": "Pedidos",
+    "messages": "Mensajes",
+    "activity": "Actividad",
+    "report": "Informe",
+    "support": "Soporte",
+    "account": "Cuenta",
+    "billing": "Facturación",
+    "documents": "Documentos",
+    "settings": "Configuración",
+    "homePage": "Página de inicio",
+    "createShipment": "Crear envío",
+    "signout": "Cerrar sesión",
+    "myAccount": "Mi cuenta"
+  },
+  "common": {
+    "user": "Usuario",
+    "logoAlt": "Logotipo de SwiftParcel",
+    "toggleNavigation": "Alternar navegación",
+    "viewAll": "Ver todo"
+  },
+  "dashboardOverview": {
+    "loading": "Cargando tu panel de logística...",
+    "errors": {
+      "fetchFailed": "No se pudieron cargar los datos del panel. Por favor, inténtalo de nuevo."
+    },
+    "empty": {
+      "title": "Tu centro global de logística",
+      "subtitle": "Gestiona envíos, rastrea entregas y escala tu negocio — todo en un solo lugar."
+    },
+    "actions": {
+      "newShipmentDesc": "Crear y programar una nueva entrega",
+      "trackDesc": "Monitorear el estado de entrega en tiempo real",
+      "billingDesc": "Ver facturas e historial de pagos",
+      "documentsDesc": "Acceder a etiquetas de envío y formularios aduaneros"
+    },
+    "stats": {
+      "total": "Envíos totales",
+      "pending": "Pendientes",
+      "inTransit": "En tránsito",
+      "delivered": "Entregados",
+      "canceled": "Cancelados",
+      "successRate": "Tasa de éxito"
+    },
+    "createFirstShipment": "Crea tu primer envío",
+    "recentShipments": "Envíos recientes",
+    "shipmentsPlaceholder": "El componente de lista de envíos se mostrará aquí.",
+    "liveTracking": "Seguimiento en vivo",
+    "trackingComingSoon": "Actualizaciones GPS en tiempo real próximamente.",
+    "packageInsights": "Información del paquete",
+    "insightsDescription": "Peso, dimensiones y datos aduaneros.",
+    "globalNetwork": "Red global de entrega",
+    "mapDescription": "Visualización de rutas en vivo impulsada por SwiftParcel Intelligence™"
+  },
+  "shipments": {
+    "title": "Envíos",
+    "subtitle": "Gestiona y rastrea todos tus envíos en un solo lugar",
+    "loading": "Cargando envíos...",
+    "errors": {
+      "fetchFailed": "No se pudieron cargar los envíos. Por favor, inténtalo de nuevo."
+    },
+    "stats": {
+      "total": "Envíos totales",
+      "pending": "Pendientes",
+      "inTransit": "En tránsito",
+      "delivered": "Entregados",
+      "canceled": "Cancelados"
+    },
+    "search": {
+      "placeholder": "Buscar por ID de seguimiento, destino..."
+    },
+    "filter": {
+      "status": "Estado",
+      "allStatuses": "Todos los estados"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "inTransit": "En tránsito",
+      "delivered": "Entregado",
+      "canceled": "Cancelado"
+    },
+    "actions": {
+      "exportCSV": "Exportar CSV",
+      "printLabels": "Imprimir etiquetas",
+      "track": "Rastrear",
+      "details": "Detalles"
+    },
+    "table": {
+      "id": "ID del envío",
+      "tracking": "Seguimiento",
+      "route": "Ruta",
+      "service": "Servicio",
+      "weight": "Peso",
+      "date": "Fecha",
+      "estDelivery": "Entrega estimada",
+      "actions": "Acciones"
+    },
+    "csv": {
+      "id": "ID",
+      "tracking": "Seguimiento",
+      "from": "De",
+      "to": "A",
+      "service": "Servicio",
+      "weight": "Peso (kg)",
+      "date": "Fecha",
+      "estDelivery": "Entrega estimada",
+      "status": "Estado"
+    },
+    "print": {
+      "title": "Etiquetas SwiftParcel",
+      "tracking": "Seguimiento",
+      "to": "A"
+    },
+    "noData": "No se encontraron envíos. Intenta ajustar tus filtros."
+  },
+  "newShipment": {
+    "title": "Enviar solicitud de envío",
+    "subtitle": "Revisaremos tus datos y te enviaremos una cotización confirmada en 2 horas hábiles.",
+    "sections": {
+      "pickupMethod": "1. Método de recolección",
+      "addresses": "2. Direcciones",
+      "packageInfo": "3. Información del paquete",
+      "transportSchedule": "4. Transporte y programación"
+    },
+    "pickup": {
+      "dropoffTitle": "Entrega en centro",
+      "dropoffDesc": "Lleva tu paquete a uno de nuestros centros locales",
+      "pickupTitle": "Programar recolección",
+      "pickupDesc": "Recogeremos desde tu ubicación"
+    },
+    "addresses": {
+      "sender": "Remitente (recolección)",
+      "recipient": "Destinatario (entrega)",
+      "businessLocation": "Ubicación comercial"
+    },
+    "placeholders": {
+      "fullName": "Nombre completo",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "streetAddress": "Dirección",
+      "city": "Ciudad",
+      "zip": "Código postal",
+      "packageDescription": "Describe el contenido (p. ej., electrónicos, ropa, maquinaria)",
+      "declaredValue": "Valor declarado (para seguro)",
+      "customsContents": "Lista todos los artículos, cantidades y valores...",
+      "specialInstructions": "Instrucciones o requisitos especiales...",
+      "additionalNotes": "Notas adicionales"
+    },
+    "labels": {
+      "preferredPickupDate": "Fecha preferida de recolección",
+      "preferredDeliveryDate": "Fecha preferida de entrega",
+      "shipmentType": "Tipo de envío",
+      "contactPreference": "Preferencia de contacto"
+    },
+    "package": {
+      "categoryLabel": "Categoría",
+      "categories": {
+        "general": "Mercancías generales",
+        "fragile": "Fragil",
+        "perishable": "Perecedero",
+        "hazardous": "Peligroso (requiere aprobación)",
+        "documents": "Documentos"
+      },
+      "hazardousWarning": "Los materiales peligrosos requieren manipulación y documentación especial. Nuestro equipo se pondrá en contacto contigo.",
+      "customsClearance": "Este envío requiere despacho aduanero"
+    },
+    "transport": {
+      "air": "Transporte aéreo",
+      "ground": "Transporte terrestre"
+    },
+    "shipmentTypes": {
+      "standard": "Estándar",
+      "express": "Exprés (24–72 h)",
+      "urgent": "Urgente (mismo día/día siguiente)"
+    },
+    "contactPreferences": {
+      "email": "Correo electrónico",
+      "sms": "SMS",
+      "phone": "Llamada telefónica"
+    },
+    "errors": {
+      "senderName": "El nombre del remitente es obligatorio",
+      "senderPhone": "El teléfono del remitente es obligatorio",
+      "senderEmail": "Se requiere un correo electrónico válido del remitente",
+      "senderAddress": "La dirección del remitente es obligatoria",
+      "senderCity": "La ciudad del remitente es obligatoria",
+      "recipientName": "El nombre del destinatario es obligatorio",
+      "recipientPhone": "El teléfono del destinatario es obligatorio",
+      "recipientEmail": "Se requiere un correo electrónico válido del destinatario",
+      "recipientAddress": "La dirección del destinatario es obligatoria",
+      "recipientCity": "La ciudad del destinatario es obligatoria",
+      "packageDescription": "La descripción del paquete es obligatoria",
+      "weight": "El peso debe ser al menos 0,1 kg",
+      "length": "La longitud debe ser al menos 1 cm",
+      "width": "El ancho debe ser al menos 1 cm",
+      "height": "La altura debe ser al menos 1 cm",
+      "customsContents": "La declaración de contenido aduanero es obligatoria",
+      "submitFailed": "Error al enviar la solicitud. Por favor, inténtalo de nuevo."
+    },
+    "success": {
+      "message": "¡Solicitud enviada con éxito! Tu ID de envío es: {{id}}"
+    },
+    "submitting": "Enviando solicitud...",
+    "submitButton": "Enviar solicitud de envío",
+    "help": {
+      "reviewTime": "Después del envío, nuestro equipo de logística revisará tu solicitud y te enviará una cotización confirmada en 2 horas hábiles.",
+      "urgentHelp": "📞 ¿Necesitas ayuda urgente? Llámanos al +1 (800) SWIFT-123"
     }
   }
 },
@@ -1894,6 +2786,226 @@ fr: {
       "title": "Gestion des cookies",
       "content": "Vous avez le droit de décider d’accepter ou de refuser les cookies. Vous pouvez exercer ce droit en configurant vos préférences via le gestionnaire de consentement aux cookies situé en bas de page du site web."
     }
+  },
+
+  "dashboard": {
+    "accessDenied": "Vous devez être connecté pour accéder au tableau de bord.",
+    "signOutFailed": "Échec de la déconnexion. Veuillez réessayer.",
+    "active": "Actif",
+    "welcomeBack": "Content de vous revoir"
+  },
+  "dash_nav": {
+    "overview": "Aperçu",
+    "shipments": "Envois",
+    "newShipment": "Nouvel envoi",
+    "track": "Suivre",
+    "orders": "Commandes",
+    "messages": "Messages",
+    "activity": "Activité",
+    "report": "Rapport",
+    "support": "Support",
+    "account": "Compte",
+    "billing": "Facturation",
+    "documents": "Documents",
+    "settings": "Paramètres",
+    "homePage": "Accueil",
+    "createShipment": "Créer un envoi",
+    "signout": "Se déconnecter",
+    "myAccount": "Mon compte"
+  },
+  "common": {
+    "user": "Utilisateur",
+    "logoAlt": "Logo SwiftParcel",
+    "toggleNavigation": "Basculer la navigation",
+    "viewAll": "Voir tout"
+  },
+  "dashboardOverview": {
+    "loading": "Chargement de votre tableau de bord logistique…",
+    "errors": {
+      "fetchFailed": "Impossible de charger les données du tableau de bord. Veuillez réessayer."
+    },
+    "empty": {
+      "title": "Votre centre logistique mondial",
+      "subtitle": "Gérez vos envois, suivez vos livraisons et développez votre entreprise — le tout en un seul endroit."
+    },
+    "actions": {
+      "newShipmentDesc": "Créer et planifier une nouvelle livraison",
+      "trackDesc": "Surveiller l’état de livraison en temps réel",
+      "billingDesc": "Consulter les factures et l’historique des paiements",
+      "documentsDesc": "Accéder aux étiquettes d’expédition et aux formulaires douaniers"
+    },
+    "stats": {
+      "total": "Total des envois",
+      "pending": "En attente",
+      "inTransit": "En transit",
+      "delivered": "Livrés",
+      "canceled": "Annulés",
+      "successRate": "Taux de réussite"
+    },
+    "createFirstShipment": "Créez votre premier envoi",
+    "recentShipments": "Envois récents",
+    "shipmentsPlaceholder": "Le composant liste des envois s’affichera ici.",
+    "liveTracking": "Suivi en direct",
+    "trackingComingSoon": "Mises à jour GPS en temps réel bientôt disponibles.",
+    "packageInsights": "Informations sur le colis",
+    "insightsDescription": "Poids, dimensions et données douanières.",
+    "globalNetwork": "Réseau mondial de livraison",
+    "mapDescription": "Visualisation en direct des itinéraires propulsée par SwiftParcel IntelligenceMC"
+  },
+  "shipments": {
+    "title": "Envois",
+    "subtitle": "Gérez et suivez tous vos envois en un seul endroit",
+    "loading": "Chargement des envois…",
+    "errors": {
+      "fetchFailed": "Impossible de charger les envois. Veuillez réessayer."
+    },
+    "stats": {
+      "total": "Total des envois",
+      "pending": "En attente",
+      "inTransit": "En transit",
+      "delivered": "Livrés",
+      "canceled": "Annulés"
+    },
+    "search": {
+      "placeholder": "Rechercher par ID de suivi, destination…"
+    },
+    "filter": {
+      "status": "Statut",
+      "allStatuses": "Tous les statuts"
+    },
+    "status": {
+      "pending": "En attente",
+      "inTransit": "En transit",
+      "delivered": "Livrés",
+      "canceled": "Annulés"
+    },
+    "actions": {
+      "exportCSV": "Exporter en CSV",
+      "printLabels": "Imprimer les étiquettes",
+      "track": "Suivre",
+      "details": "Détails"
+    },
+    "table": {
+      "id": "ID de l’envoi",
+      "tracking": "Suivi",
+      "route": "Itinéraire",
+      "service": "Service",
+      "weight": "Poids",
+      "date": "Date",
+      "estDelivery": "Livraison estimée",
+      "actions": "Actions"
+    },
+    "csv": {
+      "id": "ID",
+      "tracking": "Suivi",
+      "from": "De",
+      "to": "À",
+      "service": "Service",
+      "weight": "Poids (kg)",
+      "date": "Date",
+      "estDelivery": "Livraison estimée",
+      "status": "Statut"
+    },
+    "print": {
+      "title": "Étiquettes SwiftParcel",
+      "tracking": "Suivi",
+      "to": "À"
+    },
+    "noData": "Aucun envoi trouvé. Essayez d’ajuster vos filtres."
+  },
+  "newShipment": {
+    "title": "Soumettre une demande d’envoi",
+    "subtitle": "Nous examinerons vos informations et vous enverrons une offre confirmée sous 2 heures ouvrées.",
+    "sections": {
+      "pickupMethod": "1. Méthode de collecte",
+      "addresses": "2. Adresses",
+      "packageInfo": "3. Informations sur le colis",
+      "transportSchedule": "4. Transport et planning"
+    },
+    "pickup": {
+      "dropoffTitle": "Dépôt au centre",
+      "dropoffDesc": "Apportez votre colis dans l’un de nos centres locaux",
+      "pickupTitle": "Planifier une collecte",
+      "pickupDesc": "Nous viendrons le récupérer à votre emplacement"
+    },
+    "addresses": {
+      "sender": "Expéditeur (collecte)",
+      "recipient": "Destinataire (livraison)",
+      "businessLocation": "Adresse professionnelle"
+    },
+    "placeholders": {
+      "fullName": "Nom complet",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "streetAddress": "Adresse postale",
+      "city": "Ville",
+      "zip": "Code postal",
+      "packageDescription": "Décrivez le contenu (ex. : électronique, vêtements, machines)",
+      "declaredValue": "Valeur déclarée (pour l’assurance)",
+      "customsContents": "Listez tous les articles, quantités et valeurs…",
+      "specialInstructions": "Instructions ou exigences spéciales…",
+      "additionalNotes": "Notes supplémentaires"
+    },
+    "labels": {
+      "preferredPickupDate": "Date souhaitée de collecte",
+      "preferredDeliveryDate": "Date souhaitée de livraison",
+      "shipmentType": "Type d’envoi",
+      "contactPreference": "Préférence de contact"
+    },
+    "package": {
+      "categoryLabel": "Catégorie",
+      "categories": {
+        "general": "Marchandises générales",
+        "fragile": "Fragile",
+        "perishable": "Périssable",
+        "hazardous": "Dangereux (approbation requise)",
+        "documents": "Documents"
+      },
+      "hazardousWarning": "Les matières dangereuses nécessitent une manipulation et une documentation spéciales. Notre équipe vous contactera.",
+      "customsClearance": "Cet envoi nécessite un dédouanement"
+    },
+    "transport": {
+      "air": "Transport aérien",
+      "ground": "Transport routier"
+    },
+    "shipmentTypes": {
+      "standard": "Standard",
+      "express": "Express (24–72 h)",
+      "urgent": "Urgent (jour même/jour suivant)"
+    },
+    "contactPreferences": {
+      "email": "E-mail",
+      "sms": "SMS",
+      "phone": "Appel téléphonique"
+    },
+    "errors": {
+      "senderName": "Le nom de l’expéditeur est requis",
+      "senderPhone": "Le téléphone de l’expéditeur est requis",
+      "senderEmail": "Une adresse e-mail valide de l’expéditeur est requise",
+      "senderAddress": "L’adresse de l’expéditeur est requise",
+      "senderCity": "La ville de l’expéditeur est requise",
+      "recipientName": "Le nom du destinataire est requis",
+      "recipientPhone": "Le téléphone du destinataire est requis",
+      "recipientEmail": "Une adresse e-mail valide du destinataire est requise",
+      "recipientAddress": "L’adresse du destinataire est requise",
+      "recipientCity": "La ville du destinataire est requise",
+      "packageDescription": "La description du colis est requise",
+      "weight": "Le poids doit être d’au moins 0,1 kg",
+      "length": "La longueur doit être d’au moins 1 cm",
+      "width": "La largeur doit être d’au moins 1 cm",
+      "height": "La hauteur doit être d’au moins 1 cm",
+      "customsContents": "La déclaration de contenu douanier est requise",
+      "submitFailed": "Échec de l’envoi de la demande. Veuillez réessayer."
+    },
+    "success": {
+      "message": "Demande envoyée avec succès ! Votre ID d’envoi est : {{id}}"
+    },
+    "submitting": "Envoi en cours…",
+    "submitButton": "Soumettre la demande d’envoi",
+    "help": {
+      "reviewTime": "Après soumission, notre équipe logistique examinera votre demande et vous enverra une offre confirmée sous 2 heures ouvrées.",
+      "urgentHelp": "📞 Besoin d’aide urgente ? Appelez-nous au +1 (800) SWIFT-123"
+    }
   }
 },
 ja: {
@@ -2260,6 +3372,226 @@ ja: {
     "controllingCookies": {
       "title": "Cookieの管理",
       "content": "お客様は、Cookieの許可または拒否を決定する権利をお持ちです。ウェブサイトのフッターにある「Cookie同意マネージャー」から、設定を変更できます。"
+    }
+  },
+
+  "dashboard": {
+    "accessDenied": "ダッシュボードにアクセスするにはログインが必要です。",
+    "signOutFailed": "ログアウトに失敗しました。再度お試しください。",
+    "active": "有効",
+    "welcomeBack": "おかえりなさい"
+  },
+  "dash_nav": {
+    "overview": "概要",
+    "shipments": "荷物",
+    "newShipment": "新規荷物",
+    "track": "追跡",
+    "orders": "注文",
+    "messages": "メッセージ",
+    "activity": "アクティビティ",
+    "report": "レポート",
+    "support": "サポート",
+    "account": "アカウント",
+    "billing": "請求",
+    "documents": "書類",
+    "settings": "設定",
+    "homePage": "ホーム",
+    "createShipment": "荷物を作成",
+    "signout": "ログアウト",
+    "myAccount": "マイアカウント"
+  },
+  "common": {
+    "user": "ユーザー",
+    "logoAlt": "SwiftParcel ロゴ",
+    "toggleNavigation": "ナビゲーションを切り替え",
+    "viewAll": "すべて表示"
+  },
+  "dashboardOverview": {
+    "loading": "物流ダッシュボードを読み込み中…",
+    "errors": {
+      "fetchFailed": "ダッシュボードデータの読み込みに失敗しました。再度お試しください。"
+    },
+    "empty": {
+      "title": "グローバル物流ハブ",
+      "subtitle": "荷物の管理、配送の追跡、ビジネスの拡大を、すべて1か所で実現します。"
+    },
+    "actions": {
+      "newShipmentDesc": "新しい配送を登録・スケジュール",
+      "trackDesc": "リアルタイムで配送状況を監視",
+      "billingDesc": "請求書と支払い履歴を確認",
+      "documentsDesc": "送り状や通関書類にアクセス"
+    },
+    "stats": {
+      "total": "合計荷物数",
+      "pending": "未処理",
+      "inTransit": "輸送中",
+      "delivered": "配達済み",
+      "canceled": "キャンセル済み",
+      "successRate": "成功率"
+    },
+    "createFirstShipment": "最初の荷物を作成",
+    "recentShipments": "最近の荷物",
+    "shipmentsPlaceholder": "荷物一覧コンポーネントがここに表示されます。",
+    "liveTracking": "ライブ追跡",
+    "trackingComingSoon": "リアルタイムGPS更新機能は近日公開予定です。",
+    "packageInsights": "荷物インサイト",
+    "insightsDescription": "重量、寸法、通関データ。",
+    "globalNetwork": "グローバル配送ネットワーク",
+    "mapDescription": "SwiftParcel Intelligence™ 搭載のライブルート可視化"
+  },
+  "shipments": {
+    "title": "荷物",
+    "subtitle": "すべての配送を1か所で管理・追跡",
+    "loading": "荷物を読み込み中…",
+    "errors": {
+      "fetchFailed": "荷物の読み込みに失敗しました。再度お試しください。"
+    },
+    "stats": {
+      "total": "合計荷物数",
+      "pending": "未処理",
+      "inTransit": "輸送中",
+      "delivered": "配達済み",
+      "canceled": "キャンセル済み"
+    },
+    "search": {
+      "placeholder": "追跡IDや宛先で検索…"
+    },
+    "filter": {
+      "status": "ステータス",
+      "allStatuses": "すべてのステータス"
+    },
+    "status": {
+      "pending": "未処理",
+      "inTransit": "輸送中",
+      "delivered": "配達済み",
+      "canceled": "キャンセル済み"
+    },
+    "actions": {
+      "exportCSV": "CSVでエクスポート",
+      "printLabels": "ラベルを印刷",
+      "track": "追跡",
+      "details": "詳細"
+    },
+    "table": {
+      "id": "荷物ID",
+      "tracking": "追跡",
+      "route": "ルート",
+      "service": "サービス",
+      "weight": "重量",
+      "date": "日付",
+      "estDelivery": "配達予定日",
+      "actions": "操作"
+    },
+    "csv": {
+      "id": "ID",
+      "tracking": "追跡",
+      "from": "発送元",
+      "to": "宛先",
+      "service": "サービス",
+      "weight": "重量 (kg)",
+      "date": "日付",
+      "estDelivery": "配達予定日",
+      "status": "ステータス"
+    },
+    "print": {
+      "title": "SwiftParcel ラベル",
+      "tracking": "追跡",
+      "to": "宛先"
+    },
+    "noData": "荷物が見つかりません。フィルター条件を調整してみてください。"
+  },
+  "newShipment": {
+    "title": "荷物依頼を送信",
+    "subtitle": "内容を確認後、2営業時間以内に確定見積をお送りします。",
+    "sections": {
+      "pickupMethod": "1. 引取方法",
+      "addresses": "2. 住所情報",
+      "packageInfo": "3. 荷物情報",
+      "transportSchedule": "4. 輸送とスケジュール"
+    },
+    "pickup": {
+      "dropoffTitle": "ハブへ持ち込み",
+      "dropoffDesc": "お近くのハブまで荷物をお持ちください",
+      "pickupTitle": "集荷を依頼",
+      "pickupDesc": "お客様の所在地まで集荷に伺います"
+    },
+    "addresses": {
+      "sender": "送荷主（引取）",
+      "recipient": "受取人（配達）",
+      "businessLocation": "事業所所在地"
+    },
+    "placeholders": {
+      "fullName": "氏名",
+      "phone": "電話番号",
+      "email": "メールアドレス",
+      "streetAddress": "住所（番地まで）",
+      "city": "市区町村",
+      "zip": "郵便番号",
+      "packageDescription": "内容物を記載（例：電子機器、衣類、機械など）",
+      "declaredValue": "保険申告価格",
+      "customsContents": "品目、数量、価格をすべて記載…",
+      "specialInstructions": "特別な取り扱い指示や要件…",
+      "additionalNotes": "その他備考"
+    },
+    "labels": {
+      "preferredPickupDate": "希望引取日",
+      "preferredDeliveryDate": "希望配達日",
+      "shipmentType": "荷物タイプ",
+      "contactPreference": "連絡方法"
+    },
+    "package": {
+      "categoryLabel": "カテゴリ",
+      "categories": {
+        "general": "一般貨物",
+        "fragile": "壊れもの",
+        "perishable": "生もの",
+        "hazardous": "危険物（承認が必要）",
+        "documents": "書類"
+      },
+      "hazardousWarning": "危険物は特別な取り扱いと書類が必要です。担当者よりご連絡いたします。",
+      "customsClearance": "この荷物は通関手続きが必要です"
+    },
+    "transport": {
+      "air": "航空輸送",
+      "ground": "陸上輸送"
+    },
+    "shipmentTypes": {
+      "standard": "標準",
+      "express": "エクスプレス（24～72時間）",
+      "urgent": "緊急（当日／翌日）"
+    },
+    "contactPreferences": {
+      "email": "メール",
+      "sms": "SMS",
+      "phone": "電話"
+    },
+    "errors": {
+      "senderName": "送荷主名は必須です",
+      "senderPhone": "送荷主電話番号は必須です",
+      "senderEmail": "有効な送荷主メールアドレスを入力してください",
+      "senderAddress": "送荷主住所は必須です",
+      "senderCity": "送荷主市区町村は必須です",
+      "recipientName": "受取人名は必須です",
+      "recipientPhone": "受取人電話番号は必須です",
+      "recipientEmail": "有効な受取人メールアドレスを入力してください",
+      "recipientAddress": "受取人住所は必須です",
+      "recipientCity": "受取人市区町村は必須です",
+      "packageDescription": "荷物の説明は必須です",
+      "weight": "重量は0.1kg以上である必要があります",
+      "length": "長さは1cm以上である必要があります",
+      "width": "幅は1cm以上である必要があります",
+      "height": "高さは1cm以上である必要があります",
+      "customsContents": "通関内容の申告は必須です",
+      "submitFailed": "依頼の送信に失敗しました。再度お試しください。"
+    },
+    "success": {
+      "message": "依頼が正常に送信されました！荷物IDは {{id}} です。"
+    },
+    "submitting": "送信中…",
+    "submitButton": "荷物依頼を送信",
+    "help": {
+      "reviewTime": "送信後、物流チームが内容を確認し、2営業時間以内に確定見積をお送りします。",
+      "urgentHelp": "📞 緊急サポートが必要ですか？+1 (800) SWIFT-123 までお電話ください"
     }
   }
 },
@@ -2628,6 +3960,226 @@ pt: {
       "title": "Gestão de Cookies",
       "content": "Tem o direito de decidir se aceita ou rejeita cookies. Pode exercer os seus direitos relativos a cookies definindo as suas preferências no Gestor de Consentimento de Cookies disponível no rodapé do website."
     }
+  },
+
+  "dashboard": {
+    "accessDenied": "Tem de iniciar sessão para aceder ao painel.",
+    "signOutFailed": "Falha ao terminar sessão. Por favor, tente novamente.",
+    "active": "Ativo",
+    "welcomeBack": "Bem-vindo novamente"
+  },
+  "dash_nav": {
+    "overview": "Visão Geral",
+    "shipments": "Envios",
+    "newShipment": "Novo Envio",
+    "track": "Rastrear",
+    "orders": "Encomendas",
+    "messages": "Mensagens",
+    "activity": "Atividade",
+    "report": "Relatório",
+    "support": "Suporte",
+    "account": "Conta",
+    "billing": "Faturação",
+    "documents": "Documentos",
+    "settings": "Definições",
+    "homePage": "Página Inicial",
+    "createShipment": "Criar Envio",
+    "signout": "Terminar Sessão",
+    "myAccount": "A Minha Conta"
+  },
+  "common": {
+    "user": "Utilizador",
+    "logoAlt": "Logótipo SwiftParcel",
+    "toggleNavigation": "Alternar navegação",
+    "viewAll": "Ver Tudo"
+  },
+  "dashboardOverview": {
+    "loading": "A carregar o seu painel logístico...",
+    "errors": {
+      "fetchFailed": "Falha ao carregar os dados do painel. Por favor, tente novamente."
+    },
+    "empty": {
+      "title": "O Seu Centro Logístico Global",
+      "subtitle": "Gira envios, acompanhe entregas e expanda o seu negócio — tudo num só local."
+    },
+    "actions": {
+      "newShipmentDesc": "Criar e agendar uma nova entrega",
+      "trackDesc": "Monitorizar o estado da entrega em tempo real",
+      "billingDesc": "Ver faturas e histórico de pagamentos",
+      "documentsDesc": "Aceder a etiquetas de envio e formulários aduaneiros"
+    },
+    "stats": {
+      "total": "Total de Envios",
+      "pending": "Pendentes",
+      "inTransit": "Em Trânsito",
+      "delivered": "Entregues",
+      "canceled": "Cancelados",
+      "successRate": "Taxa de Sucesso"
+    },
+    "createFirstShipment": "Crie o Seu Primeiro Envio",
+    "recentShipments": "Envios Recentes",
+    "shipmentsPlaceholder": "O componente da lista de envios será apresentado aqui.",
+    "liveTracking": "Rastreio em Direto",
+    "trackingComingSoon": "Atualizações GPS em tempo real em breve.",
+    "packageInsights": "Informações da Encomenda",
+    "insightsDescription": "Peso, dimensões e dados aduaneiros.",
+    "globalNetwork": "Rede Global de Entrega",
+    "mapDescription": "Visualização de rotas em direto impulsionada pela SwiftParcel Intelligence™"
+  },
+  "shipments": {
+    "title": "Envios",
+    "subtitle": "Gira e acompanhe todos os seus envios num só local",
+    "loading": "A carregar envios...",
+    "errors": {
+      "fetchFailed": "Falha ao carregar os envios. Por favor, tente novamente."
+    },
+    "stats": {
+      "total": "Total de Envios",
+      "pending": "Pendentes",
+      "inTransit": "Em Trânsito",
+      "delivered": "Entregues",
+      "canceled": "Cancelados"
+    },
+    "search": {
+      "placeholder": "Pesquisar por ID de rastreio, destino..."
+    },
+    "filter": {
+      "status": "Estado",
+      "allStatuses": "Todos os Estados"
+    },
+    "status": {
+      "pending": "Pendente",
+      "inTransit": "Em Trânsito",
+      "delivered": "Entregue",
+      "canceled": "Cancelado"
+    },
+    "actions": {
+      "exportCSV": "Exportar CSV",
+      "printLabels": "Imprimir Etiquetas",
+      "track": "Rastrear",
+      "details": "Detalhes"
+    },
+    "table": {
+      "id": "ID do Envio",
+      "tracking": "Rastreio",
+      "route": "Rota",
+      "service": "Serviço",
+      "weight": "Peso",
+      "date": "Data",
+      "estDelivery": "Entrega Estimada",
+      "actions": "Ações"
+    },
+    "csv": {
+      "id": "ID",
+      "tracking": "Rastreio",
+      "from": "De",
+      "to": "Para",
+      "service": "Serviço",
+      "weight": "Peso (kg)",
+      "date": "Data",
+      "estDelivery": "Entrega Estimada",
+      "status": "Estado"
+    },
+    "print": {
+      "title": "Etiquetas SwiftParcel",
+      "tracking": "Rastreio",
+      "to": "Para"
+    },
+    "noData": "Nenhum envio encontrado. Tente ajustar os seus filtros."
+  },
+  "newShipment": {
+    "title": "Submeter Pedido de Envio",
+    "subtitle": "Iremos analisar os seus dados e enviar-lhe uma proposta confirmada dentro de 2 horas úteis.",
+    "sections": {
+      "pickupMethod": "1. Método de Recolha",
+      "addresses": "2. Moradas",
+      "packageInfo": "3. Informações da Encomenda",
+      "transportSchedule": "4. Transporte e Agendamento"
+    },
+    "pickup": {
+      "dropoffTitle": "Entrega no Centro",
+      "dropoffDesc": "Leve a sua encomenda a um dos nossos centros locais",
+      "pickupTitle": "Agendar Recolha",
+      "pickupDesc": "Recolheremos na sua localização"
+    },
+    "addresses": {
+      "sender": "Remetente (Recolha)",
+      "recipient": "Destinatário (Entrega)",
+      "businessLocation": "Localização Comercial"
+    },
+    "placeholders": {
+      "fullName": "Nome Completo",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "streetAddress": "Morada",
+      "city": "Cidade",
+      "zip": "Código Postal",
+      "packageDescription": "Descreva o conteúdo (ex: eletrónica, roupa, maquinaria)",
+      "declaredValue": "Valor Declarado (para seguro)",
+      "customsContents": "Liste todos os artigos, quantidades e valores...",
+      "specialInstructions": "Instruções ou requisitos especiais...",
+      "additionalNotes": "Notas adicionais"
+    },
+    "labels": {
+      "preferredPickupDate": "Data Pretendida de Recolha",
+      "preferredDeliveryDate": "Data Pretendida de Entrega",
+      "shipmentType": "Tipo de Envio",
+      "contactPreference": "Preferência de Contacto"
+    },
+    "package": {
+      "categoryLabel": "Categoria",
+      "categories": {
+        "general": "Mercadorias Gerais",
+        "fragile": "Fragil",
+        "perishable": "Perecível",
+        "hazardous": "Perigoso (requer aprovação)",
+        "documents": "Documentos"
+      },
+      "hazardousWarning": "Materiais perigosos requerem manuseamento e documentação especiais. A nossa equipa entrará em contacto consigo.",
+      "customsClearance": "Este envio requer desalfandragem"
+    },
+    "transport": {
+      "air": "Transporte Aéreo",
+      "ground": "Transporte Rodoviário"
+    },
+    "shipmentTypes": {
+      "standard": "Standard",
+      "express": "Expresso (24–72h)",
+      "urgent": "Urgente (Mesmo Dia/Dia Seguinte)"
+    },
+    "contactPreferences": {
+      "email": "E-mail",
+      "sms": "SMS",
+      "phone": "Chamada Telefónica"
+    },
+    "errors": {
+      "senderName": "O nome do remetente é obrigatório",
+      "senderPhone": "O telefone do remetente é obrigatório",
+      "senderEmail": "É necessário um e-mail válido do remetente",
+      "senderAddress": "A morada do remetente é obrigatória",
+      "senderCity": "A cidade do remetente é obrigatória",
+      "recipientName": "O nome do destinatário é obrigatório",
+      "recipientPhone": "O telefone do destinatário é obrigatório",
+      "recipientEmail": "É necessário um e-mail válido do destinatário",
+      "recipientAddress": "A morada do destinatário é obrigatória",
+      "recipientCity": "A cidade do destinatário é obrigatória",
+      "packageDescription": "A descrição da encomenda é obrigatória",
+      "weight": "O peso deve ser de pelo menos 0,1 kg",
+      "length": "O comprimento deve ser de pelo menos 1 cm",
+      "width": "A largura deve ser de pelo menos 1 cm",
+      "height": "A altura deve ser de pelo menos 1 cm",
+      "customsContents": "A declaração de conteúdo aduaneiro é obrigatória",
+      "submitFailed": "Falha ao submeter o pedido. Por favor, tente novamente."
+    },
+    "success": {
+      "message": "Pedido submetido com sucesso! O seu ID de envio é: {{id}}"
+    },
+    "submitting": "A submeter pedido...",
+    "submitButton": "Submeter Pedido de Envio",
+    "help": {
+      "reviewTime": "Após a submissão, a nossa equipa logística irá analisar o seu pedido e enviar-lhe uma proposta confirmada dentro de 2 horas úteis.",
+      "urgentHelp": "📞 Precisa de ajuda urgente? Ligue-nos para +1 (800) SWIFT-123"
+    }
   }
 },
 th: {
@@ -2995,6 +4547,226 @@ th: {
       "title": "การควบคุมคุกกี้",
       "content": "คุณมีสิทธิ์ตัดสินใจว่าจะยอมรับหรือปฏิเสธคุกกี้ คุณสามารถใช้สิทธิ์นี้ได้โดยการตั้งค่าความต้องการของคุณในตัวจัดการความยินยอมคุกกี้ (Cookie Consent Manager) ที่อยู่ในส่วนท้ายของเว็บไซต์"
     }
+  },
+
+  "dashboard": {
+    "accessDenied": "คุณต้องเข้าสู่ระบบก่อนจึงจะสามารถเข้าถึงแดชบอร์ดได้",
+    "signOutFailed": "ออกจากระบบไม่สำเร็จ กรุณาลองอีกครั้ง",
+    "active": "ใช้งานอยู่",
+    "welcomeBack": "ยินดีต้อนรับกลับ"
+  },
+  "dash_nav": {
+    "overview": "ภาพรวม",
+    "shipments": "พัสดุ",
+    "newShipment": "พัสดุใหม่",
+    "track": "ติดตาม",
+    "orders": "คำสั่งซื้อ",
+    "messages": "ข้อความ",
+    "activity": "กิจกรรม",
+    "report": "รายงาน",
+    "support": "สนับสนุน",
+    "account": "บัญชี",
+    "billing": "การเรียกเก็บเงิน",
+    "documents": "เอกสาร",
+    "settings": "การตั้งค่า",
+    "homePage": "หน้าหลัก",
+    "createShipment": "สร้างพัสดุ",
+    "signout": "ออกจากระบบ",
+    "myAccount": "บัญชีของฉัน"
+  },
+  "common": {
+    "user": "ผู้ใช้",
+    "logoAlt": "โลโก้ SwiftParcel",
+    "toggleNavigation": "สลับการนำทาง",
+    "viewAll": "ดูทั้งหมด"
+  },
+  "dashboardOverview": {
+    "loading": "กำลังโหลดแดชบอร์ดโลจิสติกส์ของคุณ...",
+    "errors": {
+      "fetchFailed": "ไม่สามารถโหลดข้อมูลแดชบอร์ดได้ กรุณาลองอีกครั้ง"
+    },
+    "empty": {
+      "title": "ศูนย์กลางโลจิสติกส์ระดับโลกของคุณ",
+      "subtitle": "จัดการพัสดุ ติดตามการจัดส่ง และขยายธุรกิจของคุณ — ทั้งหมดในที่เดียว"
+    },
+    "actions": {
+      "newShipmentDesc": "สร้างและกำหนดเวลาจัดส่งใหม่",
+      "trackDesc": "ตรวจสอบสถานะการจัดส่งแบบเรียลไทม์",
+      "billingDesc": "ดูใบแจ้งหนี้และประวัติการชำระเงิน",
+      "documentsDesc": "เข้าถึงฉลากจัดส่งและแบบฟอร์มศุลกากร"
+    },
+    "stats": {
+      "total": "จำนวนพัสดุทั้งหมด",
+      "pending": "รอการดำเนินการ",
+      "inTransit": "อยู่ระหว่างจัดส่ง",
+      "delivered": "จัดส่งแล้ว",
+      "canceled": "ยกเลิกแล้ว",
+      "successRate": "อัตราความสำเร็จ"
+    },
+    "createFirstShipment": "สร้างพัสดุแรกของคุณ",
+    "recentShipments": "พัสดุล่าสุด",
+    "shipmentsPlaceholder": "คอมโพเนนต์รายการพัสดุจะแสดงที่นี่",
+    "liveTracking": "ติดตามแบบสด",
+    "trackingComingSoon": "อัปเดตตำแหน่ง GPS แบบเรียลไทม์จะเปิดให้บริการเร็วๆ นี้",
+    "packageInsights": "ข้อมูลเชิงลึกของพัสดุ",
+    "insightsDescription": "น้ำหนัก ขนาด และข้อมูลศุลกากร",
+    "globalNetwork": "เครือข่ายจัดส่งทั่วโลก",
+    "mapDescription": "การแสดงเส้นทางแบบสด ขับเคลื่อนโดย SwiftParcel Intelligence™"
+  },
+  "shipments": {
+    "title": "พัสดุ",
+    "subtitle": "จัดการและติดตามพัสดุทั้งหมดของคุณในที่เดียว",
+    "loading": "กำลังโหลดพัสดุ...",
+    "errors": {
+      "fetchFailed": "ไม่สามารถโหลดพัสดุได้ กรุณาลองอีกครั้ง"
+    },
+    "stats": {
+      "total": "จำนวนพัสดุทั้งหมด",
+      "pending": "รอการดำเนินการ",
+      "inTransit": "อยู่ระหว่างจัดส่ง",
+      "delivered": "จัดส่งแล้ว",
+      "canceled": "ยกเลิกแล้ว"
+    },
+    "search": {
+      "placeholder": "ค้นหาด้วยรหัสติดตามหรือปลายทาง..."
+    },
+    "filter": {
+      "status": "สถานะ",
+      "allStatuses": "สถานะทั้งหมด"
+    },
+    "status": {
+      "pending": "รอการดำเนินการ",
+      "inTransit": "อยู่ระหว่างจัดส่ง",
+      "delivered": "จัดส่งแล้ว",
+      "canceled": "ยกเลิกแล้ว"
+    },
+    "actions": {
+      "exportCSV": "ส่งออกเป็น CSV",
+      "printLabels": "พิมพ์ฉลาก",
+      "track": "ติดตาม",
+      "details": "รายละเอียด"
+    },
+    "table": {
+      "id": "รหัสพัสดุ",
+      "tracking": "ติดตาม",
+      "route": "เส้นทาง",
+      "service": "บริการ",
+      "weight": "น้ำหนัก",
+      "date": "วันที่",
+      "estDelivery": "วันที่จัดส่งโดยประมาณ",
+      "actions": "การดำเนินการ"
+    },
+    "csv": {
+      "id": "รหัส",
+      "tracking": "ติดตาม",
+      "from": "จาก",
+      "to": "ถึง",
+      "service": "บริการ",
+      "weight": "น้ำหนัก (กก.)",
+      "date": "วันที่",
+      "estDelivery": "วันที่จัดส่งโดยประมาณ",
+      "status": "สถานะ"
+    },
+    "print": {
+      "title": "ฉลาก SwiftParcel",
+      "tracking": "ติดตาม",
+      "to": "ถึง"
+    },
+    "noData": "ไม่พบพัสดุ ลองปรับตัวกรองของคุณดู"
+  },
+  "newShipment": {
+    "title": "ส่งคำขอพัสดุ",
+    "subtitle": "เราจะตรวจสอบข้อมูลของคุณและส่งใบเสนอราคาที่ยืนยันแล้วภายใน 2 ชั่วโมงทำการ",
+    "sections": {
+      "pickupMethod": "1. วิธีรับพัสดุ",
+      "addresses": "2. ที่อยู่",
+      "packageInfo": "3. ข้อมูลพัสดุ",
+      "transportSchedule": "4. การขนส่งและกำหนดเวลา"
+    },
+    "pickup": {
+      "dropoffTitle": "นำส่งที่ศูนย์",
+      "dropoffDesc": "นำพัสดุของคุณมาที่ศูนย์ของเราแห่งใดแห่งหนึ่ง",
+      "pickupTitle": "นัดรับพัสดุ",
+      "pickupDesc": "เราจะไปรับพัสดุจากสถานที่ของคุณ"
+    },
+    "addresses": {
+      "sender": "ผู้ส่ง (รับพัสดุ)",
+      "recipient": "ผู้รับ (จัดส่ง)",
+      "businessLocation": "ที่ตั้งสำนักงาน"
+    },
+    "placeholders": {
+      "fullName": "ชื่อ-นามสกุลเต็ม",
+      "phone": "โทรศัพท์",
+      "email": "อีเมล",
+      "streetAddress": "ที่อยู่",
+      "city": "จังหวัด/เขต",
+      "zip": "รหัสไปรษณีย์",
+      "packageDescription": "อธิบายเนื้อหา (เช่น อุปกรณ์อิเล็กทรอนิกส์ เสื้อผ้า เครื่องจักร)",
+      "declaredValue": "มูลค่าที่แจ้ง (สำหรับประกัน)",
+      "customsContents": "ระบุสินค้าทั้งหมด จำนวน และมูลค่า...",
+      "specialInstructions": "คำแนะนำหรือข้อกำหนดพิเศษ...",
+      "additionalNotes": "หมายเหตุเพิ่มเติม"
+    },
+    "labels": {
+      "preferredPickupDate": "วันที่ต้องการให้รับพัสดุ",
+      "preferredDeliveryDate": "วันที่ต้องการให้จัดส่ง",
+      "shipmentType": "ประเภทพัสดุ",
+      "contactPreference": "วิธีติดต่อที่ต้องการ"
+    },
+    "package": {
+      "categoryLabel": "หมวดหมู่",
+      "categories": {
+        "general": "สินค้าทั่วไป",
+        "fragile": "ของเปราะบาง",
+        "perishable": "ของเน่าเสียง่าย",
+        "hazardous": "ของอันตราย (ต้องได้รับอนุมัติ)",
+        "documents": "เอกสาร"
+      },
+      "hazardousWarning": "ของอันตรายต้องมีการจัดการและเอกสารพิเศษ ทีมงานของเราจะติดต่อคุณ",
+      "customsClearance": "พัสดุนี้ต้องผ่านพิธีการศุลกากร"
+    },
+    "transport": {
+      "air": "ขนส่งทางอากาศ",
+      "ground": "ขนส่งทางถนน"
+    },
+    "shipmentTypes": {
+      "standard": "มาตรฐาน",
+      "express": "ด่วน (24–72 ชม.)",
+      "urgent": "เร่งด่วน (วันเดียวกัน/วันถัดไป)"
+    },
+    "contactPreferences": {
+      "email": "อีเมล",
+      "sms": "SMS",
+      "phone": "โทร"
+    },
+    "errors": {
+      "senderName": "ต้องระบุชื่อผู้ส่ง",
+      "senderPhone": "ต้องระบุเบอร์โทรศัพท์ผู้ส่ง",
+      "senderEmail": "ต้องระบุอีเมลผู้ส่งที่ถูกต้อง",
+      "senderAddress": "ต้องระบุที่อยู่ผู้ส่ง",
+      "senderCity": "ต้องระบุจังหวัด/เขตผู้ส่ง",
+      "recipientName": "ต้องระบุชื่อผู้รับ",
+      "recipientPhone": "ต้องระบุเบอร์โทรศัพท์ผู้รับ",
+      "recipientEmail": "ต้องระบุอีเมลผู้รับที่ถูกต้อง",
+      "recipientAddress": "ต้องระบุที่อยู่ผู้รับ",
+      "recipientCity": "ต้องระบุจังหวัด/เขตผู้รับ",
+      "packageDescription": "ต้องระบุคำอธิบายพัสดุ",
+      "weight": "น้ำหนักต้องมากกว่าหรือเท่ากับ 0.1 กก.",
+      "length": "ความยาวต้องมากกว่าหรือเท่ากับ 1 ซม.",
+      "width": "ความกว้างต้องมากกว่าหรือเท่ากับ 1 ซม.",
+      "height": "ความสูงต้องมากกว่าหรือเท่ากับ 1 ซม.",
+      "customsContents": "ต้องระบุรายการสินค้าสำหรับศุลกากร",
+      "submitFailed": "ส่งคำขอไม่สำเร็จ กรุณาลองอีกครั้ง"
+    },
+    "success": {
+      "message": "ส่งคำขอเรียบร้อยแล้ว! รหัสพัสดุของคุณคือ: {{id}}"
+    },
+    "submitting": "กำลังส่งคำขอ...",
+    "submitButton": "ส่งคำขอพัสดุ",
+    "help": {
+      "reviewTime": "หลังจากส่งคำขอ ทีมโลจิสติกส์ของเราจะตรวจสอบและส่งใบเสนอราคาที่ยืนยันแล้วภายใน 2 ชั่วโมงทำการ",
+      "urgentHelp": "📞 ต้องการความช่วยเหลือด่วน? โทรหาเราที่ +1 (800) SWIFT-123"
+    }
   }
 },
 zh: {
@@ -3360,6 +5132,226 @@ zh: {
     "controllingCookies": {
       "title": "Cookie 管理",
       "content": "您有权决定是否接受或拒绝 Cookie。您可通过网站页脚中的“Cookie 同意管理器”设置您的偏好。"
+    }
+  },
+
+  "dashboard": {
+    "accessDenied": "您必须登录才能访问仪表盘。",
+    "signOutFailed": "退出登录失败，请重试。",
+    "active": "有效",
+    "welcomeBack": "欢迎回来"
+  },
+  "dash_nav": {
+    "overview": "概览",
+    "shipments": "货件",
+    "newShipment": "新货件",
+    "track": "追踪",
+    "orders": "订单",
+    "messages": "消息",
+    "activity": "活动",
+    "report": "报告",
+    "support": "支持",
+    "account": "账户",
+    "billing": "账单",
+    "documents": "文档",
+    "settings": "设置",
+    "homePage": "首页",
+    "createShipment": "创建货件",
+    "signout": "退出登录",
+    "myAccount": "我的账户"
+  },
+  "common": {
+    "user": "用户",
+    "logoAlt": "SwiftParcel 徽标",
+    "toggleNavigation": "切换导航",
+    "viewAll": "查看全部"
+  },
+  "dashboardOverview": {
+    "loading": "正在加载您的物流仪表盘……",
+    "errors": {
+      "fetchFailed": "无法加载仪表盘数据，请重试。"
+    },
+    "empty": {
+      "title": "您的全球物流中心",
+      "subtitle": "管理货件、追踪配送、拓展业务——一切尽在掌握。"
+    },
+    "actions": {
+      "newShipmentDesc": "创建并安排新配送",
+      "trackDesc": "实时监控配送状态",
+      "billingDesc": "查看发票和付款记录",
+      "documentsDesc": "获取运单标签和报关单据"
+    },
+    "stats": {
+      "total": "总货件数",
+      "pending": "待处理",
+      "inTransit": "运输中",
+      "delivered": "已送达",
+      "canceled": "已取消",
+      "successRate": "成功率"
+    },
+    "createFirstShipment": "创建您的首个货件",
+    "recentShipments": "近期货件",
+    "shipmentsPlaceholder": "货件列表组件将在此处渲染。",
+    "liveTracking": "实时追踪",
+    "trackingComingSoon": "实时 GPS 更新功能即将上线。",
+    "packageInsights": "包裹洞察",
+    "insightsDescription": "重量、尺寸及报关数据。",
+    "globalNetwork": "全球配送网络",
+    "mapDescription": "由 SwiftParcel Intelligence™ 驱动的实时路线可视化"
+  },
+  "shipments": {
+    "title": "货件",
+    "subtitle": "一站式管理并追踪所有配送",
+    "loading": "正在加载货件……",
+    "errors": {
+      "fetchFailed": "无法加载货件，请重试。"
+    },
+    "stats": {
+      "total": "总货件数",
+      "pending": "待处理",
+      "inTransit": "运输中",
+      "delivered": "已送达",
+      "canceled": "已取消"
+    },
+    "search": {
+      "placeholder": "按追踪编号、目的地搜索……"
+    },
+    "filter": {
+      "status": "状态",
+      "allStatuses": "所有状态"
+    },
+    "status": {
+      "pending": "待处理",
+      "inTransit": "运输中",
+      "delivered": "已送达",
+      "canceled": "已取消"
+    },
+    "actions": {
+      "exportCSV": "导出 CSV",
+      "printLabels": "打印标签",
+      "track": "追踪",
+      "details": "详情"
+    },
+    "table": {
+      "id": "货件编号",
+      "tracking": "追踪",
+      "route": "路线",
+      "service": "服务",
+      "weight": "重量",
+      "date": "日期",
+      "estDelivery": "预计送达",
+      "actions": "操作"
+    },
+    "csv": {
+      "id": "编号",
+      "tracking": "追踪",
+      "from": "发件地",
+      "to": "收件地",
+      "service": "服务",
+      "weight": "重量 (kg)",
+      "date": "日期",
+      "estDelivery": "预计送达",
+      "status": "状态"
+    },
+    "print": {
+      "title": "SwiftParcel 标签",
+      "tracking": "追踪",
+      "to": "收件人"
+    },
+    "noData": "未找到货件。请尝试调整筛选条件。"
+  },
+  "newShipment": {
+    "title": "提交货件请求",
+    "subtitle": "我们将在 2 个工作小时内审核您的信息并发送确认报价。",
+    "sections": {
+      "pickupMethod": "1. 取件方式",
+      "addresses": "2. 地址信息",
+      "packageInfo": "3. 包裹信息",
+      "transportSchedule": "4. 运输与排期"
+    },
+    "pickup": {
+      "dropoffTitle": "网点自送",
+      "dropoffDesc": "将包裹送至我们的本地网点",
+      "pickupTitle": "预约取件",
+      "pickupDesc": "我们将上门取件"
+    },
+    "addresses": {
+      "sender": "发件人（取件）",
+      "recipient": "收件人（配送）",
+      "businessLocation": "营业地址"
+    },
+    "placeholders": {
+      "fullName": "全名",
+      "phone": "电话",
+      "email": "邮箱",
+      "streetAddress": "街道地址",
+      "city": "城市",
+      "zip": "邮政编码",
+      "packageDescription": "描述内容物（例如：电子产品、服装、机械设备）",
+      "declaredValue": "申报价值（用于保险）",
+      "customsContents": "列出所有物品、数量及价值……",
+      "specialInstructions": "特殊说明或要求……",
+      "additionalNotes": "附加备注"
+    },
+    "labels": {
+      "preferredPickupDate": "期望取件日期",
+      "preferredDeliveryDate": "期望送达日期",
+      "shipmentType": "货件类型",
+      "contactPreference": "联系方式偏好"
+    },
+    "package": {
+      "categoryLabel": "类别",
+      "categories": {
+        "general": "普通货物",
+        "fragile": "易碎品",
+        "perishable": "易腐品",
+        "hazardous": "危险品（需审批）",
+        "documents": "文件"
+      },
+      "hazardousWarning": "危险品需特殊处理和文件。我们的团队将与您联系。",
+      "customsClearance": "此货件需报关清关"
+    },
+    "transport": {
+      "air": "空运",
+      "ground": "陆运"
+    },
+    "shipmentTypes": {
+      "standard": "标准",
+      "express": "加急（24–72 小时）",
+      "urgent": "紧急（当日/次日达）"
+    },
+    "contactPreferences": {
+      "email": "邮箱",
+      "sms": "短信",
+      "phone": "电话"
+    },
+    "errors": {
+      "senderName": "发件人姓名为必填项",
+      "senderPhone": "发件人电话为必填项",
+      "senderEmail": "请输入有效的发件人邮箱",
+      "senderAddress": "发件人地址为必填项",
+      "senderCity": "发件人城市为必填项",
+      "recipientName": "收件人姓名为必填项",
+      "recipientPhone": "收件人电话为必填项",
+      "recipientEmail": "请输入有效的收件人邮箱",
+      "recipientAddress": "收件人地址为必填项",
+      "recipientCity": "收件人城市为必填项",
+      "packageDescription": "包裹描述为必填项",
+      "weight": "重量不得少于 0.1 kg",
+      "length": "长度不得少于 1 cm",
+      "width": "宽度不得少于 1 cm",
+      "height": "高度不得少于 1 cm",
+      "customsContents": "报关内容声明为必填项",
+      "submitFailed": "提交请求失败，请重试。"
+    },
+    "success": {
+      "message": "请求提交成功！您的货件编号为：{{id}}"
+    },
+    "submitting": "正在提交请求……",
+    "submitButton": "提交货件请求",
+    "help": {
+      "reviewTime": "提交后，我们的物流团队将在 2 个工作小时内审核您的请求并发送确认报价。",
+      "urgentHelp": "📞 需要紧急帮助？请致电 +1 (800) SWIFT-123"
     }
   }
 },

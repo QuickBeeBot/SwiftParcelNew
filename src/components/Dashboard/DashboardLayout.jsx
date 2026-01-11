@@ -2,10 +2,20 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../contexts/FirebaseAuthContext';
+import { useLanguage, languages } from '../../contexts/LanguageContext'; // 👈 Ensure `languages` is exported
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Globe } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import './DashboardLayout.css';
 
 const DashboardLayout = () => {
   const { currentUser, loading, signOut } = useAuth();
+  const { t, language, changeLanguage } = useLanguage(); // 👈 Add `language` and `changeLanguage`
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -45,7 +55,7 @@ const DashboardLayout = () => {
   if (!currentUser) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-[#151515] text-white">
-        <p>You must be signed in to access the dashboard.</p>
+        <p>{t('dashboard.accessDenied')}</p>
       </div>
     );
   }
@@ -56,7 +66,7 @@ const DashboardLayout = () => {
       navigate('/login', { replace: true });
     } catch (e) {
       console.error('Sign out failed:', e);
-      alert('Failed to sign out. Please try again.');
+      alert(t('dashboard.signOutFailed'));
     }
   };
 
@@ -65,11 +75,10 @@ const DashboardLayout = () => {
   const displayName =
     currentUser.displayName ||
     currentUser.email?.split('@')[0] ||
-    'User';
+    t('common.user');
 
   const userEmail = currentUser.email || 'N/A';
 
-  // Toggle profile dropdown
   const toggleProfileDropdown = () => {
     setShowProfileDropdown(!showProfileDropdown);
   };
@@ -80,7 +89,7 @@ const DashboardLayout = () => {
       <button
         className="md:hidden fixed top-4 left-4 z-20 p-2 rounded-lg bg-[#1F1F1F] text-[#36FFDB] shadow-lg"
         onClick={() => setSidebarOpen(!sidebarOpen)}
-        aria-label="Toggle navigation"
+        aria-label={t('common.toggleNavigation')}
       >
         <i className={`fas ${sidebarOpen ? 'fa-times' : 'fa-bars'}`}></i>
       </button>
@@ -90,7 +99,7 @@ const DashboardLayout = () => {
         <div className="sidebar-header">
           <img 
             src="/images/logo.png"
-            alt="SwiftParcel Logo"
+            alt={t('common.logoAlt')}
             className="logo h-3 w-auto mx-auto"
           />
           
@@ -101,7 +110,7 @@ const DashboardLayout = () => {
             <div className="user-details">
               <h3 className="user-name">{displayName}</h3>
               <p className="user-email">{userEmail}</p>
-              <span className="user-status">Active</span>
+              <span className="user-status">{t('dashboard.active')}</span>
             </div>
           </div>
         </div>
@@ -109,49 +118,49 @@ const DashboardLayout = () => {
         <div className="sidebar-nav-wrapper">
           <nav className="sidebar-nav">
             <Link to="/dashboard" className={isActive('/dashboard') ? 'active' : ''}>
-              <i className="fas fa-home"></i> Overview
+              <i className="fas fa-home"></i> {t('dash_nav.overview')}
             </Link>
             <Link to="/dashboard/shipments" className={isActive('/dashboard/shipments') ? 'active' : ''}>
-              <i className="fas fa-boxes"></i> Shipments
+              <i className="fas fa-boxes"></i> {t('dash_nav.shipments')}
             </Link>
             <Link to="/dashboard/new-shipment" className={isActive('/dashboard/new-shipment') ? 'active' : ''}>
-              <i className="fas fa-plus-circle"></i> New Shipment
+              <i className="fas fa-plus-circle"></i> {t('dash_nav.newShipment')}
             </Link>
             <Link to="/dashboard/tracking" className={isActive('/dashboard/tracking') ? 'active' : ''}>
-              <i className="fas fa-map-marked-alt"></i> Track
+              <i className="fas fa-map-marked-alt"></i> {t('dash_nav.track')}
             </Link>
             <Link to="/dashboard/orders" className={isActive('/dashboard/orders') ? 'active' : ''}>
-              <i className="fas fa-cube"></i> Orders
+              <i className="fas fa-cube"></i> {t('dash_nav.orders')}
             </Link>
             <Link to="/dashboard/messages" className={isActive('/dashboard/messages') ? 'active' : ''}>
-              <i className="fas fa-comment"></i> Messages
+              <i className="fas fa-comment"></i> {t('dash_nav.messages')}
             </Link>
             <Link to="/dashboard/activity" className={isActive('/dashboard/activity') ? 'active' : ''}>
-              <i className="fas fa-chart-line"></i> Activity
+              <i className="fas fa-chart-line"></i> {t('dash_nav.activity')}
             </Link>
             <Link to="/dashboard/report" className={isActive('/dashboard/report') ? 'active' : ''}>
-              <i className="fas fa-file-alt"></i> Report
+              <i className="fas fa-file-alt"></i> {t('dash_nav.report')}
             </Link>
             <Link to="/dashboard/support" className={isActive('/dashboard/support') ? 'active' : ''}>
-              <i className="fas fa-question-circle"></i> Support
+              <i className="fas fa-question-circle"></i> {t('dash_nav.support')}
             </Link>
             <Link to="/dashboard/account" className={isActive('/dashboard/account') ? 'active' : ''}>
-              <i className="fas fa-user"></i> Account
+              <i className="fas fa-user"></i> {t('dash_nav.account')}
             </Link>
             <Link to="/dashboard/billing" className={isActive('/dashboard/billing') ? 'active' : ''}>
-              <i className="fas fa-credit-card"></i> Billing
+              <i className="fas fa-credit-card"></i> {t('dash_nav.billing')}
             </Link>
             <Link to="/dashboard/documents" className={isActive('/dashboard/documents') ? 'active' : ''}>
-              <i className="fas fa-file-invoice"></i> Documents
+              <i className="fas fa-file-invoice"></i> {t('dash_nav.documents')}
             </Link>
             <Link to="/dashboard/settings" className={isActive('/dashboard/settings') ? 'active' : ''}>
-              <i className="fas fa-cog"></i> Settings
+              <i className="fas fa-cog"></i> {t('dash_nav.settings')}
             </Link>
           </nav>
         </div>
 
         <button className="btn-logout" onClick={handleSignOut}>
-          <i className="fas fa-sign-out-alt"></i> Sign Out
+          <i className="fas fa-sign-out-alt"></i> {t('dash_nav.signout')}
         </button>
       </aside>
 
@@ -168,7 +177,9 @@ const DashboardLayout = () => {
         {/* Top Header Bar */}
         <header className="dashboard-header">
           <div className="header-left">
-            <p className="welcome-text">Welcome back, {displayName}!</p>
+            <p className="welcome-text">
+              {t('dashboard.welcomeBack')}, {displayName}!
+            </p>
           </div>
 
           <div className="header-right">
@@ -188,6 +199,26 @@ const DashboardLayout = () => {
               <i className="fas fa-file-invoice text-white hover:text-[#36FFDB] transition-colors"></i>
             </Link>
 
+            {/* 🔹 Language Switcher (NEW) */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="text-white hover:text-[#36FFDB] hover:bg-white/5">
+                  <Globe className="w-5 h-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="bg-[#151515] border-white/10 text-white min-w-[150px]">
+                {languages.map((lang) => (
+                  <DropdownMenuItem 
+                    key={lang.code}
+                    onClick={() => changeLanguage(lang.code)}
+                    className={`cursor-pointer hover:bg-white/10 focus:bg-white/10 ${language === lang.code ? 'text-[#36FFDB]' : ''}`}
+                  >
+                    {lang.name}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             {/* Profile Dropdown */}
             <div className="profile-dropdown-container">
               <button
@@ -206,27 +237,14 @@ const DashboardLayout = () => {
               {showProfileDropdown && (
                 <div className="profile-dropdown-menu">
                   <Link to="/dashboard/account" className="dropdown-item">
-                    <i className="fas fa-user mr-2"></i> My Account
+                    <i className="fas fa-user mr-2"></i> {t('dash_nav.myAccount')}
                   </Link>
                   <Link to="/dashboard/settings" className="dropdown-item">
-                    <i className="fas fa-cog mr-2"></i> Settings
+                    <i className="fas fa-cog mr-2"></i> {t('dash_nav.settings')}
                   </Link>
                   <Link to="/" className="dropdown-item">
-                    <i className="fas fa-home mr-2"></i> Home Page
+                    <i className="fas fa-home mr-2"></i> {t('dash_nav.homePage')}
                   </Link>
-                  {/* <Link to="/dashboard/billing" className="dropdown-item">
-                    <i className="fas fa-credit-card mr-2"></i> Billing
-                  </Link>
-                  <Link to="/dashboard/documents" className="dropdown-item">
-                    <i className="fas fa-file-invoice mr-2"></i> Documents
-                  </Link> */}
-                  {/* <div className="dropdown-divider"></div>
-                  <button
-                    onClick={handleSignOut}
-                    className="dropdown-item text-red-400 hover:text-red-300"
-                  >
-                    <i className="fas fa-sign-out-alt mr-2"></i> Sign Out
-                  </button> */}
                 </div>
               )}
             </div>
@@ -236,7 +254,7 @@ const DashboardLayout = () => {
               className="btn-primaryses"
               onClick={() => navigate('/dashboard/new-shipment')}
             >
-              <i className="fas fa-plus"></i> Create Shipment
+              <i className="fas fa-plus"></i> {t('dash_nav.createShipment')}
             </button>
           </div>
         </header>
@@ -250,3 +268,270 @@ const DashboardLayout = () => {
 };
 
 export default DashboardLayout;
+
+
+
+
+
+
+// // src/components/Dashboard/DashboardLayout.jsx
+// import React, { useState, useEffect } from 'react';
+// import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
+// import { useAuth } from '../../contexts/FirebaseAuthContext';
+// import { useLanguage } from '../../contexts/LanguageContext'; // 👈 Add this
+// import './DashboardLayout.css';
+
+// const DashboardLayout = () => {
+//   const { currentUser, loading, signOut } = useAuth();
+//   const { t } = useLanguage(); // 👈 Add this
+//   const navigate = useNavigate();
+//   const location = useLocation();
+
+//   const [sidebarOpen, setSidebarOpen] = useState(false);
+//   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+
+//   // Close sidebar & dropdown on route change
+//   useEffect(() => {
+//     if (window.innerWidth < 768) {
+//       setSidebarOpen(false);
+//       setShowProfileDropdown(false);
+//     }
+//   }, [location.pathname]);
+
+//   // Auto-open sidebar on desktop
+//   useEffect(() => {
+//     const handleResize = () => {
+//       if (window.innerWidth >= 768) {
+//         setSidebarOpen(true);
+//       } else {
+//         setSidebarOpen(false);
+//       }
+//     };
+//     window.addEventListener('resize', handleResize);
+//     handleResize();
+//     return () => window.removeEventListener('resize', handleResize);
+//   }, []);
+
+//   if (loading) {
+//     return (
+//       <div className="flex min-h-screen items-center justify-center bg-[#151515] text-white">
+//         <div className="h-6 w-6 animate-spin rounded-full border-2 border-[#36FFDB] border-t-transparent" />
+//       </div>
+//     );
+//   }
+
+//   if (!currentUser) {
+//     return (
+//       <div className="flex min-h-screen items-center justify-center bg-[#151515] text-white">
+//         <p>{t('dashboard.accessDenied')}</p> {/* 👈 Localized */}
+//       </div>
+//     );
+//   }
+
+//   const handleSignOut = async () => {
+//     try {
+//       await signOut();
+//       navigate('/login', { replace: true });
+//     } catch (e) {
+//       console.error('Sign out failed:', e);
+//       alert(t('dashboard.signOutFailed')); // 👈 Localized
+//     }
+//   };
+
+//   const isActive = (path) => location.pathname === path;
+
+//   const displayName =
+//     currentUser.displayName ||
+//     currentUser.email?.split('@')[0] ||
+//     t('common.user'); // 👈 Localized
+
+//   const userEmail = currentUser.email || 'N/A';
+
+//   // Toggle profile dropdown
+//   const toggleProfileDropdown = () => {
+//     setShowProfileDropdown(!showProfileDropdown);
+//   };
+
+//   return (
+//     <div className="dashboard-layout">
+//       {/* Mobile Hamburger Menu */}
+//       <button
+//         className="md:hidden fixed top-4 left-4 z-20 p-2 rounded-lg bg-[#1F1F1F] text-[#36FFDB] shadow-lg"
+//         onClick={() => setSidebarOpen(!sidebarOpen)}
+//         aria-label={t('common.toggleNavigation')} // 👈 Localized
+//       >
+//         <i className={`fas ${sidebarOpen ? 'fa-times' : 'fa-bars'}`}></i>
+//       </button>
+
+//       {/* Sidebar */}
+//       <aside className={`dashboard-sidebar ${sidebarOpen ? 'open' : ''}`}>
+//         <div className="sidebar-header">
+//           <img 
+//             src="/images/logo.png"
+//             alt={t('common.logoAlt')} // 👈 Localized
+//             className="logo h-3 w-auto mx-auto"
+//           />
+          
+//           <div className="user-info-card">
+//             <div className="user-avatar">
+//               {currentUser.email?.[0]?.toUpperCase() || 'U'}
+//             </div>
+//             <div className="user-details">
+//               <h3 className="user-name">{displayName}</h3>
+//               <p className="user-email">{userEmail}</p>
+//               <span className="user-status">{t('dashboard.active')}</span> {/* 👈 Localized */}
+//             </div>
+//           </div>
+//         </div>
+
+//         <div className="sidebar-nav-wrapper">
+//           <nav className="sidebar-nav">
+//             <Link to="/dashboard" className={isActive('/dashboard') ? 'active' : ''}>
+//               <i className="fas fa-home"></i> {t('dash_nav.overview')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/shipments" className={isActive('/dashboard/shipments') ? 'active' : ''}>
+//               <i className="fas fa-boxes"></i> {t('dash_nav.shipments')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/new-shipment" className={isActive('/dashboard/new-shipment') ? 'active' : ''}>
+//               <i className="fas fa-plus-circle"></i> {t('dash_nav.newShipment')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/tracking" className={isActive('/dashboard/tracking') ? 'active' : ''}>
+//               <i className="fas fa-map-marked-alt"></i> {t('dash_nav.track')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/orders" className={isActive('/dashboard/orders') ? 'active' : ''}>
+//               <i className="fas fa-cube"></i> {t('dash_nav.orders')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/messages" className={isActive('/dashboard/messages') ? 'active' : ''}>
+//               <i className="fas fa-comment"></i> {t('dash_nav.messages')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/activity" className={isActive('/dashboard/activity') ? 'active' : ''}>
+//               <i className="fas fa-chart-line"></i> {t('dash_nav.activity')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/report" className={isActive('/dashboard/report') ? 'active' : ''}>
+//               <i className="fas fa-file-alt"></i> {t('dash_nav.report')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/support" className={isActive('/dashboard/support') ? 'active' : ''}>
+//               <i className="fas fa-question-circle"></i> {t('dash_nav.support')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/account" className={isActive('/dashboard/account') ? 'active' : ''}>
+//               <i className="fas fa-user"></i> {t('dash_nav.account')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/billing" className={isActive('/dashboard/billing') ? 'active' : ''}>
+//               <i className="fas fa-credit-card"></i> {t('dash_nav.billing')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/documents" className={isActive('/dashboard/documents') ? 'active' : ''}>
+//               <i className="fas fa-file-invoice"></i> {t('dash_nav.documents')} {/* 👈 Localized */}
+//             </Link>
+//             <Link to="/dashboard/settings" className={isActive('/dashboard/settings') ? 'active' : ''}>
+//               <i className="fas fa-cog"></i> {t('dash_nav.settings')} {/* 👈 Localized */}
+//             </Link>
+//           </nav>
+//         </div>
+
+//         <button className="btn-logout" onClick={handleSignOut}>
+//           <i className="fas fa-sign-out-alt"></i> {t('dash_nav.signout')} {/* 👈 Localized */}
+//         </button>
+//       </aside>
+
+//       {/* Overlay for mobile */}
+//       {sidebarOpen && (
+//         <div
+//           className="fixed inset-0 bg-black/40 z-10 md:hidden"
+//           onClick={() => setSidebarOpen(false)}
+//         />
+//       )}
+
+//       {/* Main Content */}
+//       <main className={`dashboard-mains ${sidebarOpen && window.innerWidth < 768 ? 'blurred' : ''}`}>
+//         {/* Top Header Bar */}
+//         <header className="dashboard-header">
+//           <div className="header-left">
+//             <p className="welcome-text">
+//               {t('dashboard.welcomeBack')}, {displayName}!
+//               </p>
+//             {/* <p className="welcome-text">
+//               {t('dashboard.welcomeBack', { name: displayName })} 
+//             </p> */}
+//           </div>
+
+//           <div className="header-right">
+//             {/* Notification Bell */}
+//             <button className="header-icon-btn">
+//               <i className="fas fa-bell text-white hover:text-[#36FFDB] transition-colors"></i>
+//               <span className="notification-badge">0</span>
+//             </button>
+
+//             {/* Billing Icon */}
+//             <Link to="/dashboard/billing" className="header-icon-btn">
+//               <i className="fas fa-credit-card text-white hover:text-[#36FFDB] transition-colors"></i>
+//             </Link>
+
+//             {/* Documents Icon */}
+//             <Link to="/dashboard/documents" className="header-icon-btn">
+//               <i className="fas fa-file-invoice text-white hover:text-[#36FFDB] transition-colors"></i>
+//             </Link>
+
+//             {/* Profile Dropdown */}
+//             <div className="profile-dropdown-container">
+//               <button
+//                 className="profile-trigger"
+//                 onClick={toggleProfileDropdown}
+//                 aria-haspopup="true"
+//                 aria-expanded={showProfileDropdown}
+//               >
+//                 <div className="avatar-circle">
+//                   {currentUser.email?.[0]?.toUpperCase() || 'U'}
+//                 </div>
+//                 <span className="hidden md:inline ml-2">{displayName}</span>
+//                 <i className="fas fa-chevron-down ml-1 text-xs"></i>
+//               </button>
+
+//               {showProfileDropdown && (
+//                 <div className="profile-dropdown-menu">
+//                   <Link to="/dashboard/account" className="dropdown-item">
+//                     <i className="fas fa-user mr-2"></i> {t('dash_nav.myAccount')} {/* 👈 Localized */}
+//                   </Link>
+//                   <Link to="/dashboard/settings" className="dropdown-item">
+//                     <i className="fas fa-cog mr-2"></i> {t('dash_nav.settings')} {/* 👈 Localized */}
+//                   </Link>
+//                   <Link to="/" className="dropdown-item">
+//                     <i className="fas fa-home mr-2"></i> {t('dash_nav.homePage')} {/* 👈 Localized */}
+//                   </Link>
+//                   {/* <Link to="/dashboard/billing" className="dropdown-item">
+//                     <i className="fas fa-credit-card mr-2"></i> {t('dash_nav.billing')}
+//                   </Link>
+//                   <Link to="/dashboard/documents" className="dropdown-item">
+//                     <i className="fas fa-file-invoice mr-2"></i> {t('dash_nav.documents')}
+//                   </Link> */}
+//                   {/* <div className="dropdown-divider"></div>
+//                   <button
+//                     onClick={handleSignOut}
+//                     className="dropdown-item text-red-400 hover:text-red-300"
+//                   >
+//                     <i className="fas fa-sign-out-alt mr-2"></i> {t('dash_nav.signout')}
+//                   </button> */}
+//                 </div>
+//               )}
+//             </div>
+
+//             {/* Create Shipment Button */}
+//             <button
+//               className="btn-primaryses"
+//               onClick={() => navigate('/dashboard/new-shipment')}
+//             >
+//               <i className="fas fa-plus"></i> {t('dash_nav.createShipment')} {/* 👈 Localized */}
+//             </button>
+//           </div>
+//         </header>
+
+//         <div className="dashboard-content">
+//           <Outlet />
+//         </div>
+//       </main>
+//     </div>
+//   );
+// };
+
+// export default DashboardLayout;
+
+
