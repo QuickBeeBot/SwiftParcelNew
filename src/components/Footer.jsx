@@ -20,7 +20,7 @@ const Footer = () => {
                 alt={t('footer.logoAlt')}
                 className="h-10 w-auto" 
               />
-              <span className="font-bold text-xl">SwiftParcel</span>
+              {/* <span className="font-bold text-xl">SwiftParcel</span> */}
             </div>
             <p className="text-sm text-white/70">
               {t('footer.description')}

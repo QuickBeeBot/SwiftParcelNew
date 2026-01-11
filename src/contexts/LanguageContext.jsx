@@ -275,6 +275,10 @@ const translations = {
         tagline: 'Socials'
     },
 
+
+
+
+
     "footer": {
     "logoAlt": "SwiftParcel logo",
     "description": "Seamless shipping solutions for your business needs globally.",
@@ -288,7 +292,139 @@ const translations = {
     "allRightsReserved": "All rights reserved.",
     "soc2": "SOC 2 Type II Compliant",
     "iso27001": "ISO 27001"
+  },
+  
+  "services": {
+    "pageTitle": "Our Services",
+    "metaDescription": "Explore SwiftParcel's comprehensive shipping services including air freight, ocean freight, ground transportation, and warehousing solutions.",
+    "heroTitle": "Our Shipping Services",
+    "heroSubtitle": "Comprehensive logistics solutions designed to meet your business needs",
+    "keyFeatures": "Key Features:",
+    "learnMore": "Learn More",
+    "airFreight": {
+      "title": "Air Freight",
+      "description": "Fast and efficient air cargo services for time-sensitive shipments. We partner with leading airlines to ensure your goods reach their destination quickly and safely.",
+      "features": {
+        "express": "Express delivery options",
+        "worldwide": "Worldwide coverage",
+        "tracking": "Real-time tracking",
+        "temperature": "Temperature-controlled options"
+      }
+    },
+    "oceanFreight": {
+      "title": "Ocean Freight",
+      "description": "Cost-effective ocean shipping solutions for large volume cargo. Ideal for businesses looking to transport goods internationally at competitive rates.",
+      "features": {
+        "fcl": "Full container loads (FCL)",
+        "lcl": "Less than container loads (LCL)",
+        "doorToDoor": "Door-to-door service",
+        "customs": "Customs clearance assistance"
+      }
+    },
+    "groundTransport": {
+      "title": "Ground Transportation",
+      "description": "Reliable domestic and cross-border ground shipping services. Perfect for regional deliveries and overland transportation needs.",
+      "features": {
+        "sameDay": "Same-day delivery options",
+        "regional": "Regional distribution",
+        "fleet": "Dedicated fleet",
+        "scheduling": "Flexible scheduling"
+      }
+    },
+    "warehousing": {
+      "title": "Warehousing & Logistics",
+      "description": "Complete warehousing solutions with inventory management. Store your products in our secure facilities with 24/7 monitoring.",
+      "features": {
+        "climate": "Climate-controlled storage",
+        "inventory": "Inventory management",
+        "pickPack": "Pick and pack services",
+        "distribution": "Distribution support"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 Feature Coming Soon",
+    "featureComingSoon": "This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
+  },
+
+  "quote": {
+    "pageTitle": "Get a Quote",
+    "metaDescription": "Request a shipping quote from SwiftParcel. Fill out our simple form and get a competitive quote for your cargo shipping needs.",
+    "heroTitle": "Get a Free Quote",
+    "heroSubtitle": "Fill out the form below and we'll get back to you with a competitive quote",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "John Doe",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Company Name (Optional)",
+      "emailLabel": "Email",
+      "emailPlaceholder": "john@example.com",
+      "countryLabel": "Country",
+      "countryPlaceholder": "United States",
+      "contactLabel": "Contact Number",
+      "contactPlaceholder": "+1 (555) 123-4567",
+      "addressLabel": "Shipping Address",
+      "addressPlaceholder": "Enter full shipping address",
+      "packageInfoLabel": "Package Information",
+      "packageInfoPlaceholder": "Describe your package (dimensions, weight, contents, special handling requirements)"
+    },
+    "submitting": "Submitting...",
+    "submitButton": "Submit Quote Request",
+    "success": {
+      "title": "Quote Submitted Successfully! ✅",
+      "description": "Your tracking ID is: {{trackingId}}. We'll contact you shortly with a detailed quote."
+    },
+    "error": {
+      "title": "Submission Failed",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+
+
+  "terms": {
+    "pageTitle": "Terms of Service",
+    "title": "Terms of Service",
+    "intro": "Welcome to SwiftParcel. By using our website and services, you agree to comply with and be bound by the following terms and conditions.",
+    "section1": {
+      "title": "1. Domain Usage",
+      "content": "All official communications and services are conducted exclusively through the {{domain}} domain. SwiftParcel does not operate under .express or other TLDs. We are not responsible for communications originating from unauthorized domains."
+    },
+    "section2": {
+      "title": "2. Service Agreements",
+      "content": "Shipment requests, quotes, and tracking services are subject to international maritime and aviation laws. Specific service level agreements (SLAs) will be provided upon contract formation."
+    },
+    "section3": {
+      "title": "3. User Accounts",
+      "content": "You are responsible for maintaining the confidentiality of your account credentials. Any activity occurring under your account is your responsibility."
+    }
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "title": "Privacy Policy",
+    "intro": "At SwiftParcel, we prioritize the protection of your personal and business data. This policy outlines how we collect, use, and safeguard your information.",
+    "dataCollection": {
+      "title": "Data Collection",
+      "content": "We collect information necessary to facilitate global shipping logistics, including sender/recipient addresses, package contents, and contact details. All data is processed securely."
+    },
+    "internationalTransfers": {
+      "title": "International Transfers",
+      "content": "As a global logistics provider operating via {{domain}}, your data may be transferred across borders to facilitate shipment delivery. We ensure appropriate safeguards are in place for all international transfers."
+    }
+  },
+  "cookies": {
+    "pageTitle": "Cookie Policy",
+    "title": "Cookie Policy",
+    "intro": "This policy explains how SwiftParcel uses cookies and similar technologies to recognize you when you visit our website at {{domain}}.",
+    "whatAreCookies": {
+      "title": "What are cookies?",
+      "content": "Cookies are small data files that are placed on your computer or mobile device when you visit a website. They are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information."
+    },
+    "controllingCookies": {
+      "title": "Controlling Cookies",
+      "content": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in the Cookie Consent Manager found in the website footer."
+    }
   }
+
   },
 
 ar: {
@@ -516,22 +652,147 @@ ar: {
     "formMessage": "الرسالة"
   },
   "footer": {
-    "services": "الخدمات",
-    "company": "الشركة",
-    "legal": "القانوني",
-    "airFreight": "الشحن الجوي",
-    "seaFreight": "الشحن البحري",
-    "roadFreight": "الشحن البري",
-    "warehousing": "التخزين",
-    "aboutUs": "من نحن",
+    "logoAlt": "شعار SwiftParcel",
+    "description": "حلول شحن سلسة لتلبية احتياجات عملك عالميًا.",
+    "supportButton": "توافر الدعم العالمي",
+    "quickLinks": "روابط سريعة",
     "contact": "اتصل بنا",
-    "trackShipment": "تتبع الشحنة",
-    "getQuote": "احصل على عرض سعر",
-    "privacyPolicy": "سياسة الخصوصية",
-    "termsOfService": "شروط الخدمة",
-    "cookiePolicy": "سياسة ملفات تعريف الارتباط",
-    "tagline": "وسائل التواصل الاجتماعي"
+    "legal": "القانوني",
+    "terms": "شروط الخدمة",
+    "privacy": "سياسة الخصوصية",
+    "cookies": "ملفات تعريف الارتباط والخصوصية",
+    "allRightsReserved": "جميع الحقوق محفوظة.",
+    "soc2": "متوافق مع SOC 2 النوع الثاني",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "خدماتنا",
+    "metaDescription": "استكشف خدمات الشحن الشاملة من SwiftParcel، بما في ذلك الشحن الجوي، والشحن البحري، والنقل البري، وحلول التخزين.",
+    "heroTitle": "خدمات الشحن لدينا",
+    "heroSubtitle": "حلول لوجستية شاملة مصممة لتلبية احتياجات عملك",
+    "keyFeatures": "الميزات الرئيسية:",
+    "learnMore": "اعرف المزيد",
+    "airFreight": {
+      "title": "الشحن الجوي",
+      "description": "خدمات شحن جوي سريعة وفعالة للشحنات العاجلة. نتعاون مع كبرى شركات الطيران لضمان وصول بضائعك إلى وجهتها بسرعة وأمان.",
+      "features": {
+        "express": "خيارات توصيل سريع",
+        "worldwide": "تغطية عالمية",
+        "tracking": "تتبع لحظي",
+        "temperature": "خيارات التحكم في درجة الحرارة"
+      }
+    },
+    "oceanFreight": {
+      "title": "الشحن البحري",
+      "description": "حلول شحن بحري فعالة من حيث التكلفة للبضائع ذات الحجم الكبير. مثالية للشركات التي ترغب في نقل البضائع دوليًا بأسعار تنافسية.",
+      "features": {
+        "fcl": "حمولات حاوية كاملة (FCL)",
+        "lcl": "حمولات أقل من حاوية كاملة (LCL)",
+        "doorToDoor": "خدمة من الباب إلى الباب",
+        "customs": "مساعدة في التخليص الجمركي"
+      }
+    },
+    "groundTransport": {
+      "title": "النقل البري",
+      "description": "خدمات شحن بري محلية وعبر الحدود موثوقة. مثالية للتوصيلات الإقليمية واحتياجات النقل البري.",
+      "features": {
+        "sameDay": "خيارات توصيل في نفس اليوم",
+        "regional": "توزيع إقليمي",
+        "fleet": "أسطول مخصص",
+        "scheduling": "جدولة مرنة"
+      }
+    },
+    "warehousing": {
+      "title": "التخزين والخدمات اللوجستية",
+      "description": "حلول تخزين كاملة مع إدارة المخزون. احفظ منتجاتك في منشآتنا الآمنة مع مراقبة على مدار الساعة طوال أيام الأسبوع.",
+      "features": {
+        "climate": "تخزين بتحكم مناخي",
+        "inventory": "إدارة المخزون",
+        "pickPack": "خدمات الانتقاء والتغليف",
+        "distribution": "دعم التوزيع"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 الميزة قادمة قريبًا",
+    "featureComingSoon": "لم يتم تنفيذ هذه الميزة بعد — لكن لا تقلق! يمكنك طلبها في طلبك التالي! 🚀"
+  },
+  "quote": {
+    "pageTitle": "احصل على عرض سعر",
+    "metaDescription": "اطلب عرض سعر شحن من SwiftParcel. املأ النموذج البسيط واحصل على عرض سعر تنافسي لاحتياجات شحن بضائعك.",
+    "heroTitle": "احصل على عرض سعر مجاني",
+    "heroSubtitle": "املأ النموذج أدناه وسنعاود الاتصال بك بعرض سعر تنافسي",
+    "form": {
+      "nameLabel": "الاسم",
+      "namePlaceholder": "جون دو",
+      "companyLabel": "الشركة",
+      "companyPlaceholder": "اسم الشركة (اختياري)",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "john@example.com",
+      "countryLabel": "البلد",
+      "countryPlaceholder": "الولايات المتحدة",
+      "contactLabel": "رقم الاتصال",
+      "contactPlaceholder": "+1 (555) 123-4567",
+      "addressLabel": "عنوان الشحن",
+      "addressPlaceholder": "أدخل عنوان الشحن الكامل",
+      "packageInfoLabel": "معلومات الطرد",
+      "packageInfoPlaceholder": "صف طردك (الأبعاد، الوزن، المحتويات، متطلبات التعامل الخاصة)"
+    },
+    "submitting": "جارٍ الإرسال...",
+    "submitButton": "إرسال طلب عرض السعر",
+    "success": {
+      "title": "تم إرسال طلبك بنجاح! ✅",
+      "description": "معرف التتبع الخاص بك هو: {{trackingId}}. سنقوم بالتواصل معك قريبًا بعرض سعر مفصل."
+    },
+    "error": {
+      "title": "فشل الإرسال",
+      "generic": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "terms": {
+    "pageTitle": "شروط الخدمة",
+    "title": "شروط الخدمة",
+    "intro": "مرحبًا بك في SwiftParcel. باستخدام موقعنا وخدماتنا، فإنك توافق على الامتثال للشروط والأحكام التالية والالتزام بها.",
+    "section1": {
+      "title": "1. استخدام النطاق",
+      "content": "تُجرى جميع الاتصالات والخدمات الرسمية حصريًا عبر نطاق {{domain}}. لا تعمل SwiftParcel تحت نطاقات مثل .express أو غيرها من النطاقات العليا. ولا نتحمل المسؤولية عن أي اتصالات تصدر من نطاقات غير مصرح بها."
+    },
+    "section2": {
+      "title": "2. اتفاقيات الخدمة",
+      "content": "تخضع طلبات الشحن وعروض الأسعار وخدمات التتبع للقوانين البحرية والجوية الدولية. سيتم تزويدك باتفاقيات مستوى الخدمة (SLAs) المحددة عند إبرام العقد."
+    },
+    "section3": {
+      "title": "3. حسابات المستخدمين",
+      "content": "أنت مسؤول عن الحفاظ على سرية بيانات اعتماد حسابك. أي نشاط يتم من خلال حسابك يقع على عاتقك."
+    }
+  },
+  "privacy": {
+    "pageTitle": "سياسة الخصوصية",
+    "title": "سياسة الخصوصية",
+    "intro": "في SwiftParcel، نعطي أولوية لحماية بياناتك الشخصية وبيانات عملك. توضح هذه السياسة كيفية جمعنا واستخدامنا وتأمين معلوماتك.",
+    "dataCollection": {
+      "title": "جمع البيانات",
+      "content": "نقوم بجمع المعلومات الضرورية لتسهيل عمليات الشحن العالمية، بما في ذلك عناوين المرسل والمستلم ومحتويات الطرد وتفاصيل الاتصال. تتم معالجة جميع البيانات بشكل آمن."
+    },
+    "internationalTransfers": {
+      "title": "التحويلات الدولية",
+      "content": "بصفتنا مزوّد خدمات لوجستية عالمي يعمل عبر {{domain}}، قد تُنقل بياناتك عبر الحدود لتسهيل تسليم الشحنات. ونحن نضمن وجود ضمانات مناسبة لجميع عمليات النقل الدولي."
+    }
+  },
+  "cookies": {
+    "pageTitle": "سياسة ملفات تعريف الارتباط",
+    "title": "سياسة ملفات تعريف الارتباط",
+    "intro": "توضّح هذه السياسة كيفية استخدام SwiftParcel لملفات تعريف الارتباط والتقنيات المشابهة للتعرف عليك عند زيارة موقعنا على {{domain}}.",
+    "whatAreCookies": {
+      "title": "ما هي ملفات تعريف الارتباط؟",
+      "content": "ملفات تعريف الارتباط هي ملفات بيانات صغيرة تُوضع على جهاز الكمبيوتر أو الجهاز المحمول عند زيارتك لموقع ويب. وتستخدمها مواقع الويب على نطاق واسع لجعل مواقعها تعمل، أو تعمل بكفاءة أكبر، وكذلك لتوفير معلومات إعداد التقارير."
+    },
+    "controllingCookies": {
+      "title": "التحكم في ملفات تعريف الارتباط",
+      "content": "لديك الحق في تحديد ما إذا كنت ستقبل ملفات تعريف الارتباط أو ترفضها. يمكنك ممارسة حقوقك المتعلقة بملفات تعريف الارتباط من خلال تعيين تفضيلاتك في مدير موافقة ملفات تعريف الارتباط الموجود في تذييل الموقع."
+    }
   }
+
 },
 
 de: {
@@ -758,22 +1019,147 @@ de: {
     "formSubject": "Betreff",
     "formMessage": "Nachricht"
   },
+  
   "footer": {
-    "services": "Leistungen",
-    "company": "Unternehmen",
-    "legal": "Rechtliches",
-    "airFreight": "Luftfracht",
-    "seaFreight": "Seefracht",
-    "roadFreight": "Straßenfracht",
-    "warehousing": "Lagerhaltung",
-    "aboutUs": "Über uns",
+    "logoAlt": "SwiftParcel-Logo",
+    "description": "Nahtlose Versandlösungen für Ihre geschäftlichen Anforderungen weltweit.",
+    "supportButton": "Weltweite Support-Verfügbarkeit",
+    "quickLinks": "Schnellinks",
     "contact": "Kontakt",
-    "trackShipment": "Sendung verfolgen",
-    "getQuote": "Angebot anfordern",
-    "privacyPolicy": "Datenschutzrichtlinie",
-    "termsOfService": "Nutzungsbedingungen",
-    "cookiePolicy": "Cookie-Richtlinie",
-    "tagline": "Social Media"
+    "legal": "Rechtliches",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzrichtlinie",
+    "cookies": "Cookies & Datenschutz",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "soc2": "SOC 2 Type II-konform",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "Unsere Leistungen",
+    "metaDescription": "Entdecken Sie die umfassenden Versanddienstleistungen von SwiftParcel, darunter Luftfracht, Seefracht, Straßentransport und Lagerlösungen.",
+    "heroTitle": "Unsere Versanddienstleistungen",
+    "heroSubtitle": "Umfassende Logistiklösungen, maßgeschneidert für Ihre geschäftlichen Anforderungen",
+    "keyFeatures": "Hauptmerkmale:",
+    "learnMore": "Mehr erfahren",
+    "airFreight": {
+      "title": "Luftfracht",
+      "description": "Schnelle und effiziente Luftfrachtdienstleistungen für zeitkritische Sendungen. Wir arbeiten mit führenden Fluggesellschaften zusammen, um sicherzustellen, dass Ihre Ware schnell und sicher am Ziel ankommt.",
+      "features": {
+        "express": "Expressversandoptionen",
+        "worldwide": "Weltweite Abdeckung",
+        "tracking": "Echtzeit-Tracking",
+        "temperature": "Temperaturgeführte Optionen"
+      }
+    },
+    "oceanFreight": {
+      "title": "Seefracht",
+      "description": "Kosteneffiziente Seetransportlösungen für große Frachtmengen. Ideal für Unternehmen, die Waren international zu wettbewerbsfähigen Preisen transportieren möchten.",
+      "features": {
+        "fcl": "Vollladungen (FCL)",
+        "lcl": "Teilladungen (LCL)",
+        "doorToDoor": "Door-to-Door-Service",
+        "customs": "Unterstützung bei der Zollabfertigung"
+      }
+    },
+    "groundTransport": {
+      "title": "Straßentransport",
+      "description": "Zuverlässige nationale und grenzüberschreitende Straßentransportdienstleistungen. Perfekt für regionale Lieferungen und überlandgehende Transportanforderungen.",
+      "features": {
+        "sameDay": "Same-Day-Lieferoptionen",
+        "regional": "Regionale Verteilung",
+        "fleet": "Eigenes Fuhrpark",
+        "scheduling": "Flexible Terminplanung"
+      }
+    },
+    "warehousing": {
+      "title": "Lagerhaltung & Logistik",
+      "description": "Komplette Lagerlösungen mit Inventarverwaltung. Lagern Sie Ihre Produkte in unseren sicheren Einrichtungen mit 24/7-Überwachung.",
+      "features": {
+        "climate": "Klimatisierte Lagerung",
+        "inventory": "Bestandsverwaltung",
+        "pickPack": "Kommissionier- und Verpackungsservice",
+        "distribution": "Distributionsunterstützung"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 Funktion demnächst verfügbar",
+    "featureComingSoon": "Diese Funktion ist noch nicht implementiert – aber keine Sorge! Sie können sie in Ihrer nächsten Anfrage anfordern! 🚀"
+  },
+  "quote": {
+    "pageTitle": "Angebot anfordern",
+    "metaDescription": "Fordern Sie ein Versandangebot von SwiftParcel an. Füllen Sie unser einfaches Formular aus und erhalten Sie ein wettbewerbsfähiges Angebot für Ihre Frachtversandanforderungen.",
+    "heroTitle": "Kostenloses Angebot erhalten",
+    "heroSubtitle": "Füllen Sie das untenstehende Formular aus, und wir melden uns mit einem wettbewerbsfähigen Angebot bei Ihnen.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Max Mustermann",
+      "companyLabel": "Unternehmen",
+      "companyPlaceholder": "Unternehmensname (optional)",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "max@example.com",
+      "countryLabel": "Land",
+      "countryPlaceholder": "Deutschland",
+      "contactLabel": "Kontakttelefon",
+      "contactPlaceholder": "+49 (123) 4567890",
+      "addressLabel": "Lieferadresse",
+      "addressPlaceholder": "Vollständige Lieferadresse eingeben",
+      "packageInfoLabel": "Paketinformationen",
+      "packageInfoPlaceholder": "Beschreiben Sie Ihr Paket (Abmessungen, Gewicht, Inhalt, besondere Handhabungsanforderungen)"
+    },
+    "submitting": "Wird gesendet …",
+    "submitButton": "Angebotsanfrage senden",
+    "success": {
+      "title": "Angebot erfolgreich gesendet! ✅",
+      "description": "Ihre Tracking-ID lautet: {{trackingId}}. Wir werden uns kurzfristig mit einem detaillierten Angebot bei Ihnen melden."
+    },
+    "error": {
+      "title": "Übermittlung fehlgeschlagen",
+      "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "terms": {
+    "pageTitle": "Nutzungsbedingungen",
+    "title": "Nutzungsbedingungen",
+    "intro": "Willkommen bei SwiftParcel. Durch die Nutzung unserer Website und Dienstleistungen erklären Sie sich damit einverstanden, die folgenden Allgemeinen Geschäftsbedingungen einzuhalten und sich an sie zu binden.",
+    "section1": {
+      "title": "1. Domain-Nutzung",
+      "content": "Alle offiziellen Kommunikationen und Dienstleistungen erfolgen ausschließlich über die Domain {{domain}}. SwiftParcel betreibt keine Dienste unter .express oder anderen Top-Level-Domains (TLDs). Wir übernehmen keine Verantwortung für Kommunikationen, die von nicht autorisierten Domains stammen."
+    },
+    "section2": {
+      "title": "2. Dienstleistungsvereinbarungen",
+      "content": "Versandanfragen, Angebote und Tracking-Dienste unterliegen internationalen See- und Luftfahrtgesetzen. Spezifische Service-Level-Agreements (SLAs) werden bei Vertragsschluss bereitgestellt."
+    },
+    "section3": {
+      "title": "3. Benutzerkonten",
+      "content": "Sie sind für die Vertraulichkeit Ihrer Zugangsdaten verantwortlich. Jegliche Aktivität, die über Ihr Konto erfolgt, liegt in Ihrer Verantwortung."
+    }
+  },
+  "privacy": {
+    "pageTitle": "Datenschutzrichtlinie",
+    "title": "Datenschutzrichtlinie",
+    "intro": "Bei SwiftParcel haben wir den Schutz Ihrer persönlichen und geschäftlichen Daten höchste Priorität. Diese Richtlinie erläutert, wie wir Ihre Informationen erfassen, verwenden und schützen.",
+    "dataCollection": {
+      "title": "Datenerfassung",
+      "content": "Wir erfassen Informationen, die zur Abwicklung globaler Logistikprozesse erforderlich sind, einschließlich Absender-/Empfängeradressen, Paketinhalten und Kontaktdaten. Alle Daten werden sicher verarbeitet."
+    },
+    "internationalTransfers": {
+      "title": "Internationale Datenübermittlungen",
+      "content": "Als globaler Logistikdienstleister, der über {{domain}} operiert, können Ihre Daten grenzüberschreitend übermittelt werden, um die Zustellung von Sendungen zu ermöglichen. Wir stellen sicher, dass für alle internationalen Übermittlungen angemessene Schutzmaßnahmen getroffen werden."
+    }
+  },
+  "cookies": {
+    "pageTitle": "Cookie-Richtlinie",
+    "title": "Cookie-Richtlinie",
+    "intro": "Diese Richtlinie erklärt, wie SwiftParcel Cookies und ähnliche Technologien verwendet, um Sie zu erkennen, wenn Sie unsere Website unter {{domain}} besuchen.",
+    "whatAreCookies": {
+      "title": "Was sind Cookies?",
+      "content": "Cookies sind kleine Datendateien, die auf Ihrem Computer oder Mobilgerät gespeichert werden, wenn Sie eine Website besuchen. Sie werden von Website-Betreibern häufig eingesetzt, damit ihre Websites funktionieren oder effizienter arbeiten sowie um Berichtsinformationen bereitzustellen."
+    },
+    "controllingCookies": {
+      "title": "Cookie-Einstellungen",
+      "content": "Sie haben das Recht zu entscheiden, ob Sie Cookies akzeptieren oder ablehnen möchten. Sie können Ihre Cookie-Einstellungen über den Cookie-Consent-Manager im Footer der Website vornehmen."
+    }
   }
 },
 es: {
@@ -1000,22 +1386,147 @@ es: {
     "formSubject": "Asunto",
     "formMessage": "Mensaje"
   },
+  
   "footer": {
-    "services": "Servicios",
-    "company": "Empresa",
-    "legal": "Legal",
-    "airFreight": "Carga aérea",
-    "seaFreight": "Carga marítima",
-    "roadFreight": "Carga terrestre",
-    "warehousing": "Almacenamiento",
-    "aboutUs": "Acerca de",
+    "logoAlt": "Logotipo de SwiftParcel",
+    "description": "Soluciones de envío sin complicaciones para las necesidades de tu negocio en todo el mundo.",
+    "supportButton": "Disponibilidad de soporte global",
+    "quickLinks": "Enlaces rápidos",
     "contact": "Contacto",
-    "trackShipment": "Rastrear envío",
-    "getQuote": "Obtener presupuesto",
-    "privacyPolicy": "Política de privacidad",
-    "termsOfService": "Términos de servicio",
-    "cookiePolicy": "Política de cookies",
-    "tagline": "Redes sociales"
+    "legal": "Legal",
+    "terms": "Términos de servicio",
+    "privacy": "Política de privacidad",
+    "cookies": "Cookies y privacidad",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "soc2": "Cumple con SOC 2 Tipo II",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "Nuestros servicios",
+    "metaDescription": "Explora los servicios integrales de envío de SwiftParcel, incluyendo carga aérea, carga marítima, transporte terrestre y soluciones de almacenamiento.",
+    "heroTitle": "Nuestros servicios de envío",
+    "heroSubtitle": "Soluciones logísticas integrales diseñadas para satisfacer las necesidades de tu negocio",
+    "keyFeatures": "Características principales:",
+    "learnMore": "Más información",
+    "airFreight": {
+      "title": "Carga aérea",
+      "description": "Servicios de carga aérea rápidos y eficientes para envíos urgentes. Trabajamos con las principales aerolíneas para garantizar que tus mercancías lleguen a su destino de forma rápida y segura.",
+      "features": {
+        "express": "Opciones de entrega exprés",
+        "worldwide": "Cobertura mundial",
+        "tracking": "Seguimiento en tiempo real",
+        "temperature": "Opciones con control de temperatura"
+      }
+    },
+    "oceanFreight": {
+      "title": "Carga marítima",
+      "description": "Soluciones de envío marítimo rentables para cargas de gran volumen. Ideal para empresas que desean transportar mercancías internacionalmente a tarifas competitivas.",
+      "features": {
+        "fcl": "Cargas completas de contenedor (FCL)",
+        "lcl": "Cargas menores a un contenedor (LCL)",
+        "doorToDoor": "Servicio puerta a puerta",
+        "customs": "Asistencia en despacho aduanero"
+      }
+    },
+    "groundTransport": {
+      "title": "Transporte terrestre",
+      "description": "Servicios confiables de transporte terrestre nacional e internacional. Perfecto para entregas regionales y necesidades de transporte por carretera.",
+      "features": {
+        "sameDay": "Opciones de entrega el mismo día",
+        "regional": "Distribución regional",
+        "fleet": "Flota dedicada",
+        "scheduling": "Programación flexible"
+      }
+    },
+    "warehousing": {
+      "title": "Almacenamiento y logística",
+      "description": "Soluciones integrales de almacenamiento con gestión de inventario. Almacena tus productos en nuestras instalaciones seguras con monitoreo las 24 horas.",
+      "features": {
+        "climate": "Almacenamiento con control climático",
+        "inventory": "Gestión de inventario",
+        "pickPack": "Servicios de preparación y empaque",
+        "distribution": "Apoyo en distribución"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 Función próximamente",
+    "featureComingSoon": "¡Esta función aún no está implementada, pero no te preocupes! ¡Puedes solicitarla en tu próximo mensaje! 🚀"
+  },
+  "quote": {
+    "pageTitle": "Obtener un presupuesto",
+    "metaDescription": "Solicita un presupuesto de envío de SwiftParcel. Completa nuestro sencillo formulario y recibe una cotización competitiva para tus necesidades de envío de carga.",
+    "heroTitle": "Obtén un presupuesto gratuito",
+    "heroSubtitle": "Completa el siguiente formulario y nos pondremos en contacto contigo con una cotización competitiva",
+    "form": {
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "companyLabel": "Empresa",
+      "companyPlaceholder": "Nombre de la empresa (opcional)",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "juan@example.com",
+      "countryLabel": "País",
+      "countryPlaceholder": "España",
+      "contactLabel": "Número de contacto",
+      "contactPlaceholder": "+34 600 123 456",
+      "addressLabel": "Dirección de envío",
+      "addressPlaceholder": "Ingresa la dirección de envío completa",
+      "packageInfoLabel": "Información del paquete",
+      "packageInfoPlaceholder": "Describe tu paquete (dimensiones, peso, contenido, requisitos especiales de manipulación)"
+    },
+    "submitting": "Enviando...",
+    "submitButton": "Enviar solicitud de presupuesto",
+    "success": {
+      "title": "¡Presupuesto enviado con éxito! ✅",
+      "description": "Tu ID de seguimiento es: {{trackingId}}. Nos comunicaremos contigo pronto con un presupuesto detallado."
+    },
+    "error": {
+      "title": "Error al enviar",
+      "generic": "Algo salió mal. Por favor, inténtalo de nuevo."
+    }
+  },
+  "terms": {
+    "pageTitle": "Términos de servicio",
+    "title": "Términos de servicio",
+    "intro": "Bienvenido a SwiftParcel. Al utilizar nuestro sitio web y nuestros servicios, aceptas cumplir y estar sujeto a los siguientes términos y condiciones.",
+    "section1": {
+      "title": "1. Uso del dominio",
+      "content": "Todas las comunicaciones y servicios oficiales se realizan exclusivamente a través del dominio {{domain}}. SwiftParcel no opera bajo dominios .express ni otras extensiones. No somos responsables de comunicaciones originadas desde dominios no autorizados."
+    },
+    "section2": {
+      "title": "2. Acuerdos de servicio",
+      "content": "Las solicitudes de envío, presupuestos y servicios de seguimiento están sujetos a las leyes internacionales marítimas y aéreas. Los acuerdos de nivel de servicio (SLA) específicos se proporcionarán al formalizar el contrato."
+    },
+    "section3": {
+      "title": "3. Cuentas de usuario",
+      "content": "Eres responsable de mantener la confidencialidad de las credenciales de tu cuenta. Toda actividad realizada bajo tu cuenta es de tu responsabilidad."
+    }
+  },
+  "privacy": {
+    "pageTitle": "Política de privacidad",
+    "title": "Política de privacidad",
+    "intro": "En SwiftParcel, priorizamos la protección de tus datos personales y empresariales. Esta política describe cómo recopilamos, utilizamos y salvaguardamos tu información.",
+    "dataCollection": {
+      "title": "Recopilación de datos",
+      "content": "Recopilamos la información necesaria para facilitar la logística global de envíos, incluidas direcciones del remitente y destinatario, contenido de paquetes y datos de contacto. Todos los datos se procesan de forma segura."
+    },
+    "internationalTransfers": {
+      "title": "Transferencias internacionales",
+      "content": "Como proveedor global de logística que opera mediante {{domain}}, es posible que tus datos se transfieran a otros países para facilitar la entrega de envíos. Garantizamos que se aplican las salvaguardias adecuadas en todas las transferencias internacionales."
+    }
+  },
+  "cookies": {
+    "pageTitle": "Política de cookies",
+    "title": "Política de cookies",
+    "intro": "Esta política explica cómo SwiftParcel utiliza cookies y tecnologías similares para reconocerte cuando visitas nuestro sitio web en {{domain}}.",
+    "whatAreCookies": {
+      "title": "¿Qué son las cookies?",
+      "content": "Las cookies son pequeños archivos de datos que se almacenan en tu ordenador o dispositivo móvil cuando visitas un sitio web. Son ampliamente utilizadas por los propietarios de sitios web para que sus páginas funcionen, lo hagan de forma más eficiente o para proporcionar información estadística."
+    },
+    "controllingCookies": {
+      "title": "Gestión de cookies",
+      "content": "Tienes derecho a decidir si aceptas o rechazas las cookies. Puedes ejercer este derecho configurando tus preferencias en el Gestor de Consentimiento de Cookies ubicado en el pie de página del sitio web."
+    }
   }
 },
 fr: {
@@ -1242,22 +1753,147 @@ fr: {
     "formSubject": "Objet",
     "formMessage": "Message"
   },
+  
   "footer": {
-    "services": "Services",
-    "company": "Entreprise",
-    "legal": "Mentions légales",
-    "airFreight": "Fret aérien",
-    "seaFreight": "Fret maritime",
-    "roadFreight": "Fret routier",
-    "warehousing": "Entreposage",
-    "aboutUs": "À propos",
+    "logoAlt": "Logo SwiftParcel",
+    "description": "Des solutions d’expédition fluides pour répondre aux besoins de votre entreprise à l’échelle mondiale.",
+    "supportButton": "Disponibilité du support mondial",
+    "quickLinks": "Liens rapides",
     "contact": "Contact",
-    "trackShipment": "Suivre un envoi",
-    "getQuote": "Obtenir un devis",
-    "privacyPolicy": "Politique de confidentialité",
-    "termsOfService": "Conditions d’utilisation",
-    "cookiePolicy": "Politique relative aux cookies",
-    "tagline": "Réseaux sociaux"
+    "legal": "Mentions légales",
+    "terms": "Conditions d’utilisation",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Cookies et confidentialité",
+    "allRightsReserved": "Tous droits réservés.",
+    "soc2": "Conforme SOC 2 Type II",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "Nos services",
+    "metaDescription": "Découvrez les services complets d’expédition de SwiftParcel, incluant le fret aérien, le fret maritime, le transport routier et les solutions d’entreposage.",
+    "heroTitle": "Nos services d’expédition",
+    "heroSubtitle": "Des solutions logistiques complètes conçues pour répondre aux besoins de votre entreprise",
+    "keyFeatures": "Principales fonctionnalités :",
+    "learnMore": "En savoir plus",
+    "airFreight": {
+      "title": "Fret aérien",
+      "description": "Des services de fret aérien rapides et efficaces pour les envois urgents. Nous collaborons avec les principales compagnies aériennes afin que vos marchandises atteignent leur destination rapidement et en toute sécurité.",
+      "features": {
+        "express": "Options d’expédition express",
+        "worldwide": "Couverture mondiale",
+        "tracking": "Suivi en temps réel",
+        "temperature": "Options à température contrôlée"
+      }
+    },
+    "oceanFreight": {
+      "title": "Fret maritime",
+      "description": "Des solutions de transport maritime économiques pour les cargaisons volumineuses. Idéal pour les entreprises souhaitant expédier des marchandises à l’international à des tarifs compétitifs.",
+      "features": {
+        "fcl": "Chargements complets (FCL)",
+        "lcl": "Chargements partiels (LCL)",
+        "doorToDoor": "Service porte-à-porte",
+        "customs": "Assistance au dédouanement"
+      }
+    },
+    "groundTransport": {
+      "title": "Transport routier",
+      "description": "Des services fiables de transport terrestre national et transfrontalier. Parfait pour les livraisons régionales et les besoins de transport terrestre.",
+      "features": {
+        "sameDay": "Options de livraison le jour même",
+        "regional": "Distribution régionale",
+        "fleet": "Flotte dédiée",
+        "scheduling": "Planification flexible"
+      }
+    },
+    "warehousing": {
+      "title": "Entreposage et logistique",
+      "description": "Des solutions complètes d’entreposage avec gestion des stocks. Stockez vos produits dans nos installations sécurisées avec surveillance 24h/24.",
+      "features": {
+        "climate": "Stockage à température contrôlée",
+        "inventory": "Gestion des stocks",
+        "pickPack": "Services de préparation et d’emballage",
+        "distribution": "Soutien à la distribution"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 Fonctionnalité à venir",
+    "featureComingSoon": "Cette fonctionnalité n’est pas encore implémentée – mais ne vous inquiétez pas ! Vous pouvez la demander dans votre prochaine requête ! 🚀"
+  },
+  "quote": {
+    "pageTitle": "Obtenir un devis",
+    "metaDescription": "Demandez un devis d’expédition auprès de SwiftParcel. Remplissez notre formulaire simple et recevez une offre compétitive pour vos besoins d’expédition de fret.",
+    "heroTitle": "Obtenez un devis gratuit",
+    "heroSubtitle": "Remplissez le formulaire ci-dessous et nous vous recontacterons avec une offre compétitive",
+    "form": {
+      "nameLabel": "Nom",
+      "namePlaceholder": "Jean Dupont",
+      "companyLabel": "Entreprise",
+      "companyPlaceholder": "Nom de l’entreprise (facultatif)",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "jean@example.com",
+      "countryLabel": "Pays",
+      "countryPlaceholder": "France",
+      "contactLabel": "Numéro de téléphone",
+      "contactPlaceholder": "+33 6 12 34 56 78",
+      "addressLabel": "Adresse d’expédition",
+      "addressPlaceholder": "Saisissez l’adresse complète d’expédition",
+      "packageInfoLabel": "Informations sur le colis",
+      "packageInfoPlaceholder": "Décrivez votre colis (dimensions, poids, contenu, exigences spéciales de manutention)"
+    },
+    "submitting": "Envoi en cours…",
+    "submitButton": "Envoyer la demande de devis",
+    "success": {
+      "title": "Devis envoyé avec succès ! ✅",
+      "description": "Votre identifiant de suivi est : {{trackingId}}. Nous vous contacterons prochainement avec un devis détaillé."
+    },
+    "error": {
+      "title": "Échec de l’envoi",
+      "generic": "Une erreur s’est produite. Veuillez réessayer."
+    }
+  },
+  "terms": {
+    "pageTitle": "Conditions d’utilisation",
+    "title": "Conditions d’utilisation",
+    "intro": "Bienvenue chez SwiftParcel. En utilisant notre site web et nos services, vous acceptez de respecter et d’être lié(e) par les conditions suivantes.",
+    "section1": {
+      "title": "1. Utilisation du domaine",
+      "content": "Toutes les communications et services officiels sont exclusivement assurés via le domaine {{domain}}. SwiftParcel n’opère sous aucun autre domaine tel que .express ou autres extensions. Nous ne sommes pas responsables des communications provenant de domaines non autorisés."
+    },
+    "section2": {
+      "title": "2. Accords de service",
+      "content": "Les demandes d’expédition, les devis et les services de suivi sont soumis aux lois internationales maritimes et aériennes. Des accords de niveau de service (SLA) spécifiques vous seront fournis lors de la conclusion du contrat."
+    },
+    "section3": {
+      "title": "3. Comptes utilisateurs",
+      "content": "Vous êtes responsable de la confidentialité de vos identifiants de compte. Toute activité effectuée depuis votre compte relève de votre responsabilité."
+    }
+  },
+  "privacy": {
+    "pageTitle": "Politique de confidentialité",
+    "title": "Politique de confidentialité",
+    "intro": "Chez SwiftParcel, nous accordons la priorité à la protection de vos données personnelles et professionnelles. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.",
+    "dataCollection": {
+      "title": "Collecte de données",
+      "content": "Nous recueillons les informations nécessaires à la gestion logistique internationale, notamment les adresses de l’expéditeur et du destinataire, le contenu des colis et les coordonnées de contact. Toutes les données sont traitées de manière sécurisée."
+    },
+    "internationalTransfers": {
+      "title": "Transferts internationaux",
+      "content": "En tant que prestataire logistique mondial opérant via {{domain}}, vos données peuvent être transférées à l’étranger afin de faciliter la livraison des envois. Nous veillons à ce que des garanties appropriées soient en place pour tous les transferts internationaux."
+    }
+  },
+  "cookies": {
+    "pageTitle": "Politique relative aux cookies",
+    "title": "Politique relative aux cookies",
+    "intro": "Cette politique explique comment SwiftParcel utilise les cookies et technologies similaires pour vous reconnaître lorsque vous visitez notre site web à l’adresse {{domain}}.",
+    "whatAreCookies": {
+      "title": "Qu’est-ce qu’un cookie ?",
+      "content": "Les cookies sont de petits fichiers de données placés sur votre ordinateur ou appareil mobile lorsque vous visitez un site web. Ils sont largement utilisés par les propriétaires de sites afin de faire fonctionner leurs sites, de les rendre plus efficaces, ou pour fournir des informations statistiques."
+    },
+    "controllingCookies": {
+      "title": "Gestion des cookies",
+      "content": "Vous avez le droit de décider d’accepter ou de refuser les cookies. Vous pouvez exercer ce droit en configurant vos préférences via le gestionnaire de consentement aux cookies situé en bas de page du site web."
+    }
   }
 },
 ja: {
@@ -1484,22 +2120,147 @@ ja: {
     "formSubject": "件名",
     "formMessage": "メッセージ"
   },
+  
   "footer": {
-    "services": "サービス",
-    "company": "会社情報",
-    "legal": "法的情報",
-    "airFreight": "航空貨物",
-    "seaFreight": "海上貨物",
-    "roadFreight": "陸上輸送",
-    "warehousing": "倉庫保管",
-    "aboutUs": "会社概要",
+    "logoAlt": "SwiftParcel ロゴ",
+    "description": "グローバルなビジネスニーズに応える、シームレスな配送ソリューション。",
+    "supportButton": "グローバルサポート対応状況",
+    "quickLinks": "クイックリンク",
     "contact": "お問い合わせ",
-    "trackShipment": "荷物を追跡",
-    "getQuote": "お見積りを取得",
-    "privacyPolicy": "プライバシーポリシー",
-    "termsOfService": "利用規約",
-    "cookiePolicy": "Cookieポリシー",
-    "tagline": "SNS"
+    "legal": "法的情報",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "cookies": "Cookieとプライバシー",
+    "allRightsReserved": "All rights reserved.",
+    "soc2": "SOC 2 Type II 準拠",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "サービス一覧",
+    "metaDescription": "SwiftParcelの包括的な配送サービスをご覧ください。航空貨物、海上貨物、陸上輸送、倉庫保管ソリューションを提供しています。",
+    "heroTitle": "配送サービス",
+    "heroSubtitle": "お客様のビジネスニーズに合わせた包括的な物流ソリューション",
+    "keyFeatures": "主な特徴:",
+    "learnMore": "詳しく見る",
+    "airFreight": {
+      "title": "航空貨物",
+      "description": "時間に敏感な貨物向けの迅速かつ効率的な航空輸送サービス。大手航空会社と提携し、お客様の大切な荷物を迅速かつ安全にお届けします。",
+      "features": {
+        "express": "エクスプレス配送オプション",
+        "worldwide": "世界中へのカバレッジ",
+        "tracking": "リアルタイム追跡",
+        "temperature": "温度管理付きオプション"
+      }
+    },
+    "oceanFreight": {
+      "title": "海上貨物",
+      "description": "大量貨物に最適なコスト効率の高い海上輸送ソリューション。国際的に競争力のある料金で貨物を輸送したい企業に最適です。",
+      "features": {
+        "fcl": "フルコンテナ積み（FCL）",
+        "lcl": "混載貨物（LCL）",
+        "doorToDoor": "ドアツードアサービス",
+        "customs": "通関手続きサポート"
+      }
+    },
+    "groundTransport": {
+      "title": "陸上輸送",
+      "description": "国内および国際間の信頼性の高い陸上輸送サービス。地域配送や陸上輸送ニーズに最適です。",
+      "features": {
+        "sameDay": "当日配送オプション",
+        "regional": "地域配送ネットワーク",
+        "fleet": "専用車両",
+        "scheduling": "柔軟なスケジュール対応"
+      }
+    },
+    "warehousing": {
+      "title": "倉庫保管・物流",
+      "description": "在庫管理を含む包括的な倉庫ソリューション。24時間365日監視された安全な施設で、お客様の商品を保管します。",
+      "features": {
+        "climate": "温度・湿度管理倉庫",
+        "inventory": "在庫管理",
+        "pickPack": "ピッキング・梱包サービス",
+        "distribution": "配送サポート"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 機能準備中",
+    "featureComingSoon": "この機能はまだ実装されていませんが、心配ありません！次のリクエストでお知らせください！🚀"
+  },
+  "quote": {
+    "pageTitle": "お見積りを取得",
+    "metaDescription": "SwiftParcelから配送のお見積りをリクエストしてください。簡単なフォームにご記入いただくだけで、競争力のあるお見積りをお届けします。",
+    "heroTitle": "無料でお見積りを取得",
+    "heroSubtitle": "以下のフォームにご記入ください。競争力のあるお見積りをご連絡いたします。",
+    "form": {
+      "nameLabel": "お名前",
+      "namePlaceholder": "山田 太郎",
+      "companyLabel": "会社名",
+      "companyPlaceholder": "会社名（任意）",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "taro@example.com",
+      "countryLabel": "国",
+      "countryPlaceholder": "日本",
+      "contactLabel": "電話番号",
+      "contactPlaceholder": "+81 90-1234-5678",
+      "addressLabel": "配送先住所",
+      "addressPlaceholder": "配送先の住所をすべて入力してください",
+      "packageInfoLabel": "荷物情報",
+      "packageInfoPlaceholder": "荷物の詳細（寸法、重量、内容物、特別な取り扱い要件など）を記載してください"
+    },
+    "submitting": "送信中…",
+    "submitButton": "お見積りリクエストを送信",
+    "success": {
+      "title": "お見積りリクエストが完了しました！✅",
+      "description": "追跡ID: {{trackingId}} です。まもなく詳細なお見積りをご連絡いたします。"
+    },
+    "error": {
+      "title": "送信に失敗しました",
+      "generic": "エラーが発生しました。再度お試しください。"
+    }
+  },
+  "terms": {
+    "pageTitle": "利用規約",
+    "title": "利用規約",
+    "intro": "SwiftParcelへようこそ。当社のウェブサイトおよびサービスをご利用になることで、以下の利用規約に同意したものとみなされます。",
+    "section1": {
+      "title": "1. ドメインの使用",
+      "content": "すべての公式コミュニケーションおよびサービスは、{{domain}} ドメインでのみ提供されます。SwiftParcelは .express その他のTLDドメインでは運営していません。許可されていないドメインからの通信については、一切責任を負いません。"
+    },
+    "section2": {
+      "title": "2. サービス契約",
+      "content": "配送依頼、お見積り、追跡サービスは、国際海事法および航空法に準拠します。具体的なサービスレベル契約（SLA）は、契約締結時に提供されます。"
+    },
+    "section3": {
+      "title": "3. ユーザーアカウント",
+      "content": "お客様は、アカウント認証情報の機密性を維持する責任があります。お客様のアカウント下で発生したすべての活動について、お客様が責任を負います。"
+    }
+  },
+  "privacy": {
+    "pageTitle": "プライバシーポリシー",
+    "title": "プライバシーポリシー",
+    "intro": "SwiftParcelでは、お客様の個人情報およびビジネスデータの保護を最優先しています。本ポリシーでは、情報の収集・利用・保護方法について説明します。",
+    "dataCollection": {
+      "title": "データ収集",
+      "content": "グローバル物流を円滑に進めるために、送荷主・受取人の住所、荷物の内容、連絡先などの必要な情報を収集します。すべてのデータは安全に処理されます。"
+    },
+    "internationalTransfers": {
+      "title": "国際的なデータ移転",
+      "content": "{{domain}} を通じて運営されるグローバル物流プロバイダーとして、配送を円滑に行うため、お客様のデータを海外に移転する場合があります。すべての国際移転において、適切な保護措置を講じています。"
+    }
+  },
+  "cookies": {
+    "pageTitle": "Cookieポリシー",
+    "title": "Cookieポリシー",
+    "intro": "本ポリシーでは、お客様が {{domain}} のウェブサイトをご利用になる際に、SwiftParcelがCookieおよび類似技術を使用する方法について説明します。",
+    "whatAreCookies": {
+      "title": "Cookieとは？",
+      "content": "Cookieは、お客様がウェブサイトを訪問した際に、コンピューターやモバイル端末に保存される小さなデータファイルです。ウェブサイト運営者が、サイトの機能向上や効率化、利用状況の分析のために広く使用しています。"
+    },
+    "controllingCookies": {
+      "title": "Cookieの管理",
+      "content": "お客様は、Cookieの許可または拒否を決定する権利をお持ちです。ウェブサイトのフッターにある「Cookie同意マネージャー」から、設定を変更できます。"
+    }
   }
 },
 pt: {
@@ -1726,22 +2487,147 @@ pt: {
     "formSubject": "Assunto",
     "formMessage": "Mensagem"
   },
+  
   "footer": {
-    "services": "Serviços",
-    "company": "Empresa",
-    "legal": "Legal",
-    "airFreight": "Frete Aéreo",
-    "seaFreight": "Frete Marítimo",
-    "roadFreight": "Frete Rodoviário",
-    "warehousing": "Armazenagem",
-    "aboutUs": "Sobre Nós",
+    "logoAlt": "Logótipo SwiftParcel",
+    "description": "Soluções de envio contínuas para as necessidades do seu negócio a nível global.",
+    "supportButton": "Disponibilidade de Apoio Global",
+    "quickLinks": "Ligações Rápidas",
     "contact": "Contacto",
-    "trackShipment": "Rastrear Envio",
-    "getQuote": "Obter Orçamento",
-    "privacyPolicy": "Política de Privacidade",
-    "termsOfService": "Termos de Serviço",
-    "cookiePolicy": "Política de Cookies",
-    "tagline": "Redes Sociais"
+    "legal": "Informação Legal",
+    "terms": "Termos de Serviço",
+    "privacy": "Política de Privacidade",
+    "cookies": "Cookies e Privacidade",
+    "allRightsReserved": "Todos os direitos reservados.",
+    "soc2": "Conformidade SOC 2 Tipo II",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "Os Nossos Serviços",
+    "metaDescription": "Explore os serviços completos de envio da SwiftParcel, incluindo frete aéreo, frete marítimo, transporte rodoviário e soluções de armazenagem.",
+    "heroTitle": "Os Nossos Serviços de Envio",
+    "heroSubtitle": "Soluções logísticas abrangentes concebidas para satisfazer as necessidades do seu negócio",
+    "keyFeatures": "Principais Características:",
+    "learnMore": "Saber Mais",
+    "airFreight": {
+      "title": "Frete Aéreo",
+      "description": "Serviços de carga aérea rápidos e eficientes para envios urgentes. Parceiros com as principais companhias aéreas para garantir que as suas mercadorias cheguem ao destino de forma rápida e segura.",
+      "features": {
+        "express": "Opções de entrega expresso",
+        "worldwide": "Cobertura mundial",
+        "tracking": "Acompanhamento em tempo real",
+        "temperature": "Opções com controlo de temperatura"
+      }
+    },
+    "oceanFreight": {
+      "title": "Frete Marítimo",
+      "description": "Soluções de transporte marítimo económicas para cargas volumosas. Ideal para empresas que pretendem transportar mercadorias internacionalmente a tarifas competitivas.",
+      "features": {
+        "fcl": "Cargas completas de contentor (FCL)",
+        "lcl": "Cargas inferiores a um contentor (LCL)",
+        "doorToDoor": "Serviço porta-a-porta",
+        "customs": "Apoio na desalfandragem"
+      }
+    },
+    "groundTransport": {
+      "title": "Transporte Rodoviário",
+      "description": "Serviços fiáveis de transporte rodoviário nacional e transfronteiriço. Perfeito para entregas regionais e necessidades de transporte terrestre.",
+      "features": {
+        "sameDay": "Opções de entrega no mesmo dia",
+        "regional": "Distribuição regional",
+        "fleet": "Frota dedicada",
+        "scheduling": "Agendamento flexível"
+      }
+    },
+    "warehousing": {
+      "title": "Armazenagem e Logística",
+      "description": "Soluções completas de armazenagem com gestão de inventário. Armazene os seus produtos nas nossas instalações seguras com monitorização 24/7.",
+      "features": {
+        "climate": "Armazenagem com controlo climático",
+        "inventory": "Gestão de inventário",
+        "pickPack": "Serviços de preparação e embalagem",
+        "distribution": "Apoio à distribuição"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 Funcionalidade em Breve",
+    "featureComingSoon": "Esta funcionalidade ainda não está implementada — mas não se preocupe! Pode solicitá-la na sua próxima mensagem! 🚀"
+  },
+  "quote": {
+    "pageTitle": "Obter Orçamento",
+    "metaDescription": "Solicite um orçamento de envio da SwiftParcel. Preencha o nosso formulário simples e receba uma proposta competitiva para as suas necessidades de transporte de carga.",
+    "heroTitle": "Obtenha um Orçamento Gratuito",
+    "heroSubtitle": "Preencha o formulário abaixo e entraremos em contacto consigo com uma proposta competitiva",
+    "form": {
+      "nameLabel": "Nome",
+      "namePlaceholder": "João Silva",
+      "companyLabel": "Empresa",
+      "companyPlaceholder": "Nome da Empresa (Opcional)",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "joao@example.com",
+      "countryLabel": "País",
+      "countryPlaceholder": "Portugal",
+      "contactLabel": "Número de Contacto",
+      "contactPlaceholder": "+351 912 345 678",
+      "addressLabel": "Morada de Envio",
+      "addressPlaceholder": "Introduza a morada completa de envio",
+      "packageInfoLabel": "Informações da Encomenda",
+      "packageInfoPlaceholder": "Descreva a sua encomenda (dimensões, peso, conteúdo, requisitos especiais de manuseamento)"
+    },
+    "submitting": "A enviar...",
+    "submitButton": "Enviar Pedido de Orçamento",
+    "success": {
+      "title": "Orçamento Enviado com Sucesso! ✅",
+      "description": "O seu ID de acompanhamento é: {{trackingId}}. Entraremos em contacto consigo em breve com um orçamento detalhado."
+    },
+    "error": {
+      "title": "Falha no Envio",
+      "generic": "Ocorreu um erro. Por favor, tente novamente."
+    }
+  },
+  "terms": {
+    "pageTitle": "Termos de Serviço",
+    "title": "Termos de Serviço",
+    "intro": "Bem-vindo à SwiftParcel. Ao utilizar o nosso website e serviços, concorda em cumprir e ficar vinculado aos seguintes termos e condições.",
+    "section1": {
+      "title": "1. Utilização do Domínio",
+      "content": "Todas as comunicações e serviços oficiais são realizados exclusivamente através do domínio {{domain}}. A SwiftParcel não opera sob domínios .express ou outras TLDs. Não somos responsáveis por comunicações provenientes de domínios não autorizados."
+    },
+    "section2": {
+      "title": "2. Acordos de Serviço",
+      "content": "Os pedidos de envio, orçamentos e serviços de rastreio estão sujeitos às leis internacionais marítimas e aeronáuticas. Acordos específicos de nível de serviço (SLAs) serão fornecidos aquando da celebração do contrato."
+    },
+    "section3": {
+      "title": "3. Contas de Utilizador",
+      "content": "É responsável por manter a confidencialidade das credenciais da sua conta. Qualquer atividade realizada na sua conta é da sua inteira responsabilidade."
+    }
+  },
+  "privacy": {
+    "pageTitle": "Política de Privacidade",
+    "title": "Política de Privacidade",
+    "intro": "Na SwiftParcel, damos prioridade à proteção dos seus dados pessoais e empresariais. Esta política descreve como recolhemos, utilizamos e salvaguardamos a sua informação.",
+    "dataCollection": {
+      "title": "Recolha de Dados",
+      "content": "Recolhemos informações necessárias para facilitar a logística global de envios, incluindo moradas do remetente e destinatário, conteúdo das encomendas e dados de contacto. Todos os dados são processados de forma segura."
+    },
+    "internationalTransfers": {
+      "title": "Transferências Internacionais",
+      "content": "Enquanto prestador global de logística que opera através de {{domain}}, os seus dados poderão ser transferidos para outros países para facilitar a entrega de encomendas. Garantimos que estão em vigor salvaguardas adequadas para todas as transferências internacionais."
+    }
+  },
+  "cookies": {
+    "pageTitle": "Política de Cookies",
+    "title": "Política de Cookies",
+    "intro": "Esta política explica como a SwiftParcel utiliza cookies e tecnologias semelhantes para o reconhecer quando visita o nosso website em {{domain}}.",
+    "whatAreCookies": {
+      "title": "O que são cookies?",
+      "content": "Os cookies são pequenos ficheiros de dados colocados no seu computador ou dispositivo móvel quando visita um website. São amplamente utilizados pelos proprietários de websites para que estes funcionem, ou funcionem de forma mais eficiente, bem como para fornecer informações de relatórios."
+    },
+    "controllingCookies": {
+      "title": "Gestão de Cookies",
+      "content": "Tem o direito de decidir se aceita ou rejeita cookies. Pode exercer os seus direitos relativos a cookies definindo as suas preferências no Gestor de Consentimento de Cookies disponível no rodapé do website."
+    }
   }
 },
 th: {
@@ -1968,22 +2854,147 @@ th: {
     "formSubject": "หัวเรื่อง",
     "formMessage": "ข้อความ"
   },
+  
   "footer": {
-    "services": "บริการ",
-    "company": "บริษัท",
-    "legal": "ข้อกฎหมาย",
-    "airFreight": "ขนส่งทางอากาศ",
-    "seaFreight": "ขนส่งทางทะเล",
-    "roadFreight": "ขนส่งทางถนน",
-    "warehousing": "คลังสินค้า",
-    "aboutUs": "เกี่ยวกับเรา",
+    "logoAlt": "โลโก้ SwiftParcel",
+    "description": "โซลูชันการจัดส่งอย่างไร้รอยต่อเพื่อตอบโจทย์ความต้องการทางธุรกิจของคุณทั่วโลก",
+    "supportButton": "สถานะการให้บริการสนับสนุนทั่วโลก",
+    "quickLinks": "ลิงก์ด่วน",
     "contact": "ติดต่อเรา",
-    "trackShipment": "ติดตามพัสดุ",
-    "getQuote": "ขอใบเสนอราคา",
-    "privacyPolicy": "นโยบายความเป็นส่วนตัว",
-    "termsOfService": "ข้อกำหนดการให้บริการ",
-    "cookiePolicy": "นโยบายคุกกี้",
-    "tagline": "โซเชียลมีเดีย"
+    "legal": "ข้อกฎหมาย",
+    "terms": "ข้อกำหนดการให้บริการ",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "cookies": "คุกกี้และนโยบายความเป็นส่วนตัว",
+    "allRightsReserved": "สงวนลิขสิทธิ์ทุกประการ",
+    "soc2": "ได้รับการรับรองตามมาตรฐาน SOC 2 Type II",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "บริการของเรา",
+    "metaDescription": "สำรวจบริการจัดส่งแบบครบวงจรจาก SwiftParcel รวมถึงขนส่งทางอากาศ ขนส่งทางทะเล ขนส่งทางถนน และโซลูชันคลังสินค้า",
+    "heroTitle": "บริการจัดส่งของเรา",
+    "heroSubtitle": "โซลูชันโลจิสติกส์แบบครบวงจรที่ออกแบบมาเพื่อตอบโจทย์ธุรกิจของคุณ",
+    "keyFeatures": "คุณสมบัติหลัก:",
+    "learnMore": "เรียนรู้เพิ่มเติม",
+    "airFreight": {
+      "title": "ขนส่งทางอากาศ",
+      "description": "บริการขนส่งสินค้าทางอากาศที่รวดเร็วและมีประสิทธิภาพสำหรับสินค้าที่ต้องการจัดส่งด่วน เราเป็นพันธมิตรกับสายการบินชั้นนำเพื่อให้มั่นใจว่าสินค้าของคุณจะถึงปลายทางอย่างรวดเร็วและปลอดภัย",
+      "features": {
+        "express": "ตัวเลือกจัดส่งด่วน",
+        "worldwide": "ครอบคลุมทั่วโลก",
+        "tracking": "ติดตามแบบเรียลไทม์",
+        "temperature": "ตัวเลือกควบคุมอุณหภูมิ"
+      }
+    },
+    "oceanFreight": {
+      "title": "ขนส่งทางทะเล",
+      "description": "โซลูชันการขนส่งทางทะเลที่คุ้มค่าสำหรับสินค้าปริมาณมาก เหมาะสำหรับธุรกิจที่ต้องการส่งสินค้าระหว่างประเทศในอัตราที่แข่งขันได้",
+      "features": {
+        "fcl": "สินค้าเต็มตู้ (FCL)",
+        "lcl": "สินค้าไม่เต็มตู้ (LCL)",
+        "doorToDoor": "บริการถึงหน้าประตู",
+        "customs": "ช่วยเหลือด้านพิธีการศุลกากร"
+      }
+    },
+    "groundTransport": {
+      "title": "ขนส่งทางถนน",
+      "description": "บริการขนส่งทางถนนภายในประเทศและข้ามพรมแดนที่เชื่อถือได้ เหมาะสำหรับการจัดส่งในระดับภูมิภาคและความต้องการขนส่งทางบก",
+      "features": {
+        "sameDay": "ตัวเลือกจัดส่งภายในวันเดียว",
+        "regional": "กระจายสินค้าในระดับภูมิภาค",
+        "fleet": "รถขนส่งเฉพาะ",
+        "scheduling": "จัดตารางเวลาได้อย่างยืดหยุ่น"
+      }
+    },
+    "warehousing": {
+      "title": "คลังสินค้าและโลจิสติกส์",
+      "description": "โซลูชันคลังสินค้าแบบครบวงจรพร้อมระบบจัดการสต็อก สินค้าของคุณจะถูกเก็บรักษาในคลังที่ปลอดภัยของเราพร้อมระบบเฝ้าระวังตลอด 24 ชั่วโมง",
+      "features": {
+        "climate": "คลังสินค้าควบคุมสภาพแวดล้อม",
+        "inventory": "ระบบจัดการสต็อก",
+        "pickPack": "บริการคัดแยกและบรรจุสินค้า",
+        "distribution": "สนับสนุนการกระจายสินค้า"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 ฟีเจอร์กำลังจะมาถึง",
+    "featureComingSoon": "ฟีเจอร์นี้ยังไม่ได้เปิดใช้งาน — แต่ไม่ต้องกังวล! คุณสามารถร้องขอได้ในข้อความถัดไป! 🚀"
+  },
+  "quote": {
+    "pageTitle": "ขอใบเสนอราคา",
+    "metaDescription": "ร้องขอใบเสนอราคาค่าจัดส่งจาก SwiftParcel กรอกแบบฟอร์มง่ายๆ ของเราและรับใบเสนอราคาที่แข่งขันได้สำหรับความต้องการจัดส่งสินค้าของคุณ",
+    "heroTitle": "รับใบเสนอราคาฟรี",
+    "heroSubtitle": "กรอกแบบฟอร์มด้านล่าง และเราจะติดต่อกลับคุณพร้อมใบเสนอราคาที่แข่งขันได้",
+    "form": {
+      "nameLabel": "ชื่อ",
+      "namePlaceholder": "สมชาย ใจดี",
+      "companyLabel": "บริษัท",
+      "companyPlaceholder": "ชื่อบริษัท (ไม่จำเป็น)",
+      "emailLabel": "อีเมล",
+      "emailPlaceholder": "somchai@example.com",
+      "countryLabel": "ประเทศ",
+      "countryPlaceholder": "ประเทศไทย",
+      "contactLabel": "เบอร์ติดต่อ",
+      "contactPlaceholder": "+66 81 234 5678",
+      "addressLabel": "ที่อยู่จัดส่ง",
+      "addressPlaceholder": "กรอกที่อยู่จัดส่งให้ครบถ้วน",
+      "packageInfoLabel": "ข้อมูลพัสดุ",
+      "packageInfoPlaceholder": "อธิบายพัสดุของคุณ (ขนาด น้ำหนัก เนื้อหา สิ่งที่ต้องการเป็นพิเศษในการจัดการ)"
+    },
+    "submitting": "กำลังส่ง...",
+    "submitButton": "ส่งคำขอใบเสนอราคา",
+    "success": {
+      "title": "ส่งคำขอเรียบร้อยแล้ว! ✅",
+      "description": "รหัสติดตามของคุณคือ: {{trackingId}} เราจะติดต่อคุณเร็วๆ นี้พร้อมใบเสนอราคาโดยละเอียด"
+    },
+    "error": {
+      "title": "การส่งล้มเหลว",
+      "generic": "เกิดข้อผิดพลาด กรุณาลองอีกครั้ง"
+    }
+  },
+  "terms": {
+    "pageTitle": "ข้อกำหนดการให้บริการ",
+    "title": "ข้อกำหนดการให้บริการ",
+    "intro": "ยินดีต้อนรับสู่ SwiftParcel การใช้งานเว็บไซต์และบริการของเรา ถือว่าคุณยอมรับและผูกพันตามข้อกำหนดและเงื่อนไขต่อไปนี้",
+    "section1": {
+      "title": "1. การใช้โดเมน",
+      "content": "การสื่อสารและบริการทั้งหมดดำเนินการผ่านโดเมน {{domain}} เท่านั้น SwiftParcel ไม่ได้ให้บริการผ่านโดเมน .express หรือโดเมนอื่นใด เราจะไม่รับผิดชอบต่อการสื่อสารที่มาจากโดเมนที่ไม่ได้รับอนุญาต"
+    },
+    "section2": {
+      "title": "2. ข้อตกลงการให้บริการ",
+      "content": "คำขอจัดส่ง ใบเสนอราคา และบริการติดตาม จะอยู่ภายใต้กฎหมายระหว่างประเทศด้านการเดินเรือและอากาศ ข้อตกลงระดับการให้บริการ (SLA) ที่เฉพาะเจาะจงจะแจ้งให้ทราบเมื่อมีการทำสัญญา"
+    },
+    "section3": {
+      "title": "3. บัญชีผู้ใช้",
+      "content": "คุณมีหน้าที่รักษาความลับของข้อมูลเข้าสู่ระบบบัญชีของคุณ กิจกรรมใดๆ ที่เกิดขึ้นภายใต้บัญชีของคุณถือเป็นความรับผิดชอบของคุณ"
+    }
+  },
+  "privacy": {
+    "pageTitle": "นโยบายความเป็นส่วนตัว",
+    "title": "นโยบายความเป็นส่วนตัว",
+    "intro": "ที่ SwiftParcel เราให้ความสำคัญกับการปกป้องข้อมูลส่วนบุคคลและข้อมูลทางธุรกิจของคุณ นโยบายฉบับนี้อธิบายว่าเราเก็บรวบรวม ใช้ และคุ้มครองข้อมูลของคุณอย่างไร",
+    "dataCollection": {
+      "title": "การเก็บรวบรวมข้อมูล",
+      "content": "เราเก็บรวบรวมข้อมูลที่จำเป็นเพื่ออำนวยความสะดวกด้านโลจิสติกส์ระดับโลก รวมถึงที่อยู่ผู้ส่ง/ผู้รับ รายละเอียดสินค้า และข้อมูลติดต่อ ข้อมูลทั้งหมดจะถูกประมวลผลอย่างปลอดภัย"
+    },
+    "internationalTransfers": {
+      "title": "การโอนข้อมูลระหว่างประเทศ",
+      "content": "ในฐานะผู้ให้บริการโลจิสติกส์ระดับโลกที่ดำเนินงานผ่าน {{domain}} ข้อมูลของคุณอาจถูกโอนข้ามพรมแดนเพื่ออำนวยความสะดวกในการจัดส่ง เราดูแลให้มีมาตรการคุ้มครองที่เหมาะสมสำหรับการโอนข้อมูลระหว่างประเทศทั้งหมด"
+    }
+  },
+  "cookies": {
+    "pageTitle": "นโยบายคุกกี้",
+    "title": "นโยบายคุกกี้",
+    "intro": "นโยบายนี้อธิบายว่า SwiftParcel ใช้คุกกี้และเทคโนโลยีที่คล้ายกันอย่างไร เพื่อจดจำคุณเมื่อคุณเยี่ยมชมเว็บไซต์ของเราที่ {{domain}}",
+    "whatAreCookies": {
+      "title": "คุกกี้คืออะไร?",
+      "content": "คุกกี้คือไฟล์ข้อมูลขนาดเล็กที่ถูกจัดเก็บไว้ในคอมพิวเตอร์หรืออุปกรณ์มือถือของคุณเมื่อคุณเข้าชมเว็บไซต์ เว็บไซต์ส่วนใหญ่ใช้คุกกี้เพื่อให้เว็บไซต์ทำงานได้ หรือทำงานได้อย่างมีประสิทธิภาพมากขึ้น รวมถึงเพื่อจัดทำรายงานข้อมูล"
+    },
+    "controllingCookies": {
+      "title": "การควบคุมคุกกี้",
+      "content": "คุณมีสิทธิ์ตัดสินใจว่าจะยอมรับหรือปฏิเสธคุกกี้ คุณสามารถใช้สิทธิ์นี้ได้โดยการตั้งค่าความต้องการของคุณในตัวจัดการความยินยอมคุกกี้ (Cookie Consent Manager) ที่อยู่ในส่วนท้ายของเว็บไซต์"
+    }
   }
 },
 zh: {
@@ -2211,21 +3222,145 @@ zh: {
     "formMessage": "消息内容"
   },
   "footer": {
-    "services": "服务",
-    "company": "公司",
-    "legal": "法律信息",
-    "airFreight": "空运",
-    "seaFreight": "海运",
-    "roadFreight": "陆运",
-    "warehousing": "仓储服务",
-    "aboutUs": "关于我们",
+    "logoAlt": "SwiftParcel 徽标",
+    "description": "为您的全球业务需求提供无缝货运解决方案。",
+    "supportButton": "全球支持服务可用性",
+    "quickLinks": "快速链接",
     "contact": "联系我们",
-    "trackShipment": "追踪货件",
-    "getQuote": "获取报价",
-    "privacyPolicy": "隐私政策",
-    "termsOfService": "服务条款",
-    "cookiePolicy": "Cookie 政策",
-    "tagline": "社交媒体"
+    "legal": "法律信息",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "cookies": "Cookie 与隐私",
+    "allRightsReserved": "版权所有。",
+    "soc2": "符合 SOC 2 Type II 标准",
+    "iso27001": "ISO 27001"
+  },
+  "services": {
+    "pageTitle": "我们的服务",
+    "metaDescription": "探索 SwiftParcel 全面的货运服务，包括空运、海运、陆运和仓储解决方案。",
+    "heroTitle": "我们的货运服务",
+    "heroSubtitle": "量身打造的综合物流解决方案，满足您的业务需求",
+    "keyFeatures": "主要特点：",
+    "learnMore": "了解更多",
+    "airFreight": {
+      "title": "空运",
+      "description": "为时效敏感型货物提供快速高效的航空货运服务。我们与领先航空公司合作，确保您的货物快速、安全抵达目的地。",
+      "features": {
+        "express": "加急配送选项",
+        "worldwide": "全球覆盖",
+        "tracking": "实时追踪",
+        "temperature": "温控运输选项"
+      }
+    },
+    "oceanFreight": {
+      "title": "海运",
+      "description": "为大批量货物提供高性价比的海运解决方案。适合希望以具有竞争力的价格进行国际货物运输的企业。",
+      "features": {
+        "fcl": "整箱货（FCL）",
+        "lcl": "拼箱货（LCL）",
+        "doorToDoor": "门到门服务",
+        "customs": "清关协助"
+      }
+    },
+    "groundTransport": {
+      "title": "陆运",
+      "description": "可靠的国内及跨境陆路运输服务。适用于区域配送和陆路运输需求。",
+      "features": {
+        "sameDay": "当日达选项",
+        "regional": "区域分发",
+        "fleet": "专属车队",
+        "scheduling": "灵活调度"
+      }
+    },
+    "warehousing": {
+      "title": "仓储与物流",
+      "description": "提供含库存管理在内的完整仓储解决方案。您的产品将存放于我们配备 24/7 监控的安全仓库中。",
+      "features": {
+        "climate": "恒温恒湿仓储",
+        "inventory": "库存管理",
+        "pickPack": "拣货与包装服务",
+        "distribution": "配送支持"
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "🚧 功能即将上线",
+    "featureComingSoon": "此功能尚未实现——但别担心！您可以在下一条消息中提出需求！🚀"
+  },
+  "quote": {
+    "pageTitle": "获取报价",
+    "metaDescription": "向 SwiftParcel 申请货运报价。填写我们的简易表单，即可获得具有竞争力的货运报价。",
+    "heroTitle": "免费获取报价",
+    "heroSubtitle": "填写下方表单，我们将为您提供一份具有竞争力的报价",
+    "form": {
+      "nameLabel": "姓名",
+      "namePlaceholder": "张伟",
+      "companyLabel": "公司",
+      "companyPlaceholder": "公司名称（可选）",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "zhangwei@example.com",
+      "countryLabel": "国家",
+      "countryPlaceholder": "中国",
+      "contactLabel": "联系电话",
+      "contactPlaceholder": "+86 138 1234 5678",
+      "addressLabel": "收货地址",
+      "addressPlaceholder": "请输入完整收货地址",
+      "packageInfoLabel": "包裹信息",
+      "packageInfoPlaceholder": "请描述您的包裹（尺寸、重量、内容物、特殊处理要求）"
+    },
+    "submitting": "提交中…",
+    "submitButton": "提交报价请求",
+    "success": {
+      "title": "报价请求已成功提交！✅",
+      "description": "您的追踪编号为：{{trackingId}}。我们将尽快与您联系并提供详细报价。"
+    },
+    "error": {
+      "title": "提交失败",
+      "generic": "出现错误，请重试。"
+    }
+  },
+  "terms": {
+    "pageTitle": "服务条款",
+    "title": "服务条款",
+    "intro": "欢迎使用 SwiftParcel。使用我们的网站和服务即表示您同意遵守并受以下条款和条件的约束。",
+    "section1": {
+      "title": "1. 域名使用",
+      "content": "所有官方通信和服务仅通过 {{domain}} 域名提供。SwiftParcel 不在 .express 或其他顶级域名下运营。对于来自未授权域名的通信，我们不承担任何责任。"
+    },
+    "section2": {
+      "title": "2. 服务协议",
+      "content": "货运请求、报价和追踪服务均受国际海事法和航空法约束。具体的服务水平协议（SLA）将在合同签订时提供。"
+    },
+    "section3": {
+      "title": "3. 用户账户",
+      "content": "您有责任维护账户凭证的机密性。您账户下发生的所有活动均由您本人负责。"
+    }
+  },
+  "privacy": {
+    "pageTitle": "隐私政策",
+    "title": "隐私政策",
+    "intro": "在 SwiftParcel，我们高度重视您个人及企业数据的保护。本政策说明了我们如何收集、使用和保护您的信息。",
+    "dataCollection": {
+      "title": "数据收集",
+      "content": "我们会收集全球物流所需的信息，包括寄件人/收件人地址、包裹内容和联系方式。所有数据均经过安全处理。"
+    },
+    "internationalTransfers": {
+      "title": "国际数据传输",
+      "content": "作为通过 {{domain}} 运营的全球物流服务商，您的数据可能会跨境传输以协助完成货运交付。我们确保所有国际传输均具备适当的保障措施。"
+    }
+  },
+  "cookies": {
+    "pageTitle": "Cookie 政策",
+    "title": "Cookie 政策",
+    "intro": "本政策说明 SwiftParcel 如何在您访问我们位于 {{domain}} 的网站时，使用 Cookie 及类似技术识别您的身份。",
+    "whatAreCookies": {
+      "title": "什么是 Cookie？",
+      "content": "Cookie 是您访问网站时存储在计算机或移动设备上的小型数据文件。网站所有者广泛使用 Cookie 以确保网站正常运行、提升效率，并提供报告信息。"
+    },
+    "controllingCookies": {
+      "title": "Cookie 管理",
+      "content": "您有权决定是否接受或拒绝 Cookie。您可通过网站页脚中的“Cookie 同意管理器”设置您的偏好。"
+    }
   }
 },
 
