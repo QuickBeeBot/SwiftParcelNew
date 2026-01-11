@@ -129,7 +129,7 @@
 .setting-item input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  accent-color: #FF6B35;
+  accent-color: #36FFDB;
 }
 .setting-item select {
   padding: 0.5rem;
@@ -197,4 +197,27 @@
   background: rgba(239, 68, 68, 0.2);
   color: #fca5a5;
   border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.btn-primaryses {
+  padding: 0.65rem 1.25rem;
+  background: #36FFDB;
+  color: #1F1F1F;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(54, 255, 219, 0.2);
+  font-size: 0.95rem;
+}
+
+.btn-primaryses:hover {
+  background: #1F1F1F;
+  color: #36FFDB;
+  border: 2px solid #36FFDB;
+  transform: translateY(-2px);
 }

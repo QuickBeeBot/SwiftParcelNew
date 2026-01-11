@@ -138,14 +138,14 @@ const DashboardLayout = () => {
             <Link to="/dashboard/account" className={isActive('/dashboard/account') ? 'active' : ''}>
               <i className="fas fa-user"></i> Account
             </Link>
-            <Link to="/dashboard/settings" className={isActive('/dashboard/settings') ? 'active' : ''}>
-              <i className="fas fa-cog"></i> Settings
-            </Link>
             <Link to="/dashboard/billing" className={isActive('/dashboard/billing') ? 'active' : ''}>
               <i className="fas fa-credit-card"></i> Billing
             </Link>
             <Link to="/dashboard/documents" className={isActive('/dashboard/documents') ? 'active' : ''}>
               <i className="fas fa-file-invoice"></i> Documents
+            </Link>
+            <Link to="/dashboard/settings" className={isActive('/dashboard/settings') ? 'active' : ''}>
+              <i className="fas fa-cog"></i> Settings
             </Link>
           </nav>
         </div>
