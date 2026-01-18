@@ -119,22 +119,22 @@ const DashboardOverview = () => {
           <div className="action-cards-grid">
             <div className="action-card" onClick={() => navigateTo('/dashboard/new-shipment')}>
               <Plus className="action-icon" />
-              <h3>{t('nav.newShipment')}</h3> {/* 👈 Reuse nav key */}
+              <h3>{t('dash_nav.newShipment')}</h3> {/* 👈 Reuse nav key */}
               <p>{t('dashboardOverview.actions.newShipmentDesc')}</p> {/* 👈 Localized */}
             </div>
             <div className="action-card" onClick={() => navigateTo('/dashboard/tracking')}>
               <MapPin className="action-icon" />
-              <h3>{t('nav.track')}</h3> {/* 👈 Reuse nav key */}
+              <h3>{t('dash_nav.track')}</h3> {/* 👈 Reuse nav key */}
               <p>{t('dashboardOverview.actions.trackDesc')}</p> {/* 👈 Localized */}
             </div>
             <div className="action-card" onClick={() => navigateTo('/dashboard/billing')}>
               <CreditCard className="action-icon" />
-              <h3>{t('nav.billing')}</h3> {/* 👈 Reuse nav key */}
+              <h3>{t('dash_nav.billing')}</h3> {/* 👈 Reuse nav key */}
               <p>{t('dashboardOverview.actions.billingDesc')}</p> {/* 👈 Localized */}
             </div>
             <div className="action-card" onClick={() => navigateTo('/dashboard/documents')}>
               <FileText className="action-icon" />
-              <h3>{t('nav.documents')}</h3> {/* 👈 Reuse nav key */}
+              <h3>{t('dash_nav.documents')}</h3> {/* 👈 Reuse nav key */}
               <p>{t('dashboardOverview.actions.documentsDesc')}</p> {/* 👈 Localized */}
             </div>
           </div>
@@ -203,22 +203,22 @@ const DashboardOverview = () => {
           <div className="quick-actions-row">
             <QuickAction 
               icon={<Plus />}
-              title={t('nav.newShipment')}
+              title={t('dash_nav.newShipment')}
               onClick={() => navigateTo('/dashboard/new-shipment')}
             />
             <QuickAction 
               icon={<MapPin />}
-              title={t('nav.track')}
+              title={t('dash_nav.track')}
               onClick={() => navigateTo('/dashboard/tracking')}
             />
             <QuickAction 
               icon={<CreditCard />}
-              title={t('nav.billing')}
+              title={t('dash_nav.billing')}
               onClick={() => navigateTo('/dashboard/billing')}
             />
             <QuickAction 
               icon={<FileText />}
-              title={t('nav.documents')}
+              title={t('dash_nav.documents')}
               onClick={() => navigateTo('/dashboard/documents')}
             />
           </div>
