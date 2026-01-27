@@ -51,10 +51,10 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-[#36FFDB] mt-0.5" />
                 <span className="text-white/70">info@swiftparcel.global</span>
               </li>
-              <li className="flex items-start space-x-3">
+              {/* <li className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-[#36FFDB] mt-0.5" />
                 <span className="text-white/70">+44 118 315 0778</span>
-              </li>
+              </li> */}
             </ul>
           </div>
 
